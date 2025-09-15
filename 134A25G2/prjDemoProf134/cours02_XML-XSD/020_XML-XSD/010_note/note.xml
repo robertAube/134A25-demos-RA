@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="note.xsd">
+    <to>Patrick</to>
+    <froom>Robert</froom>
+    <heading>Rappel</heading>
+    <body>Voici le TP1</body>
+</note>
+
+

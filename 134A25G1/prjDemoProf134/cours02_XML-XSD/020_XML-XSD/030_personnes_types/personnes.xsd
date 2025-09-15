@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="personnes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personne" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string"/>
+                            <xs:element name="age" type="xs:integer"/>
+                            <xs:element name="estActif" type="xs:boolean"/> <!-- true ou false -->
+                            <xs:element name="taille" type="xs:float"/> <!-- réel -->
+                            <xs:element name="dateNaissance" type="xs:date"/>
+                            <xs:element name="heureInscription" type="xs:time"/>
+                            <xs:element name="dernierAcces" type="xs:dateTime"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

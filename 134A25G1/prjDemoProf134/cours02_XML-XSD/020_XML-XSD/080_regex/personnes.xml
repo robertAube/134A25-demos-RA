@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="personne.xsd">
+    <noEmploye>13321</noEmploye>
+    <codeDeptartement>BIO</codeDeptartement>
+    <telephone>1-418-555-1234</telephone>
+</personne>

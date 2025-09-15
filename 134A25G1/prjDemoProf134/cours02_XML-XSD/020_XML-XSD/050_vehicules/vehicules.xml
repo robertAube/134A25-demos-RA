@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<garage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="vehicules.xsd">
+    <auto>
+        <marque>Toyota</marque>
+        <modele>Corolla</modele>
+        <portes>4</portes>
+    </auto>
+    <moto>
+        <marque>Yamaha</marque>
+        <modele>MT-07</modele>
+        <cylindree>689</cylindree>
+    </moto>
+</garage>

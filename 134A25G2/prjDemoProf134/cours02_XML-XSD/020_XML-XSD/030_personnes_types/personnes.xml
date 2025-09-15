@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personnes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="personnes.xsd">
+    <personne>
+        <nom>Dupont</nom>
+        <age>35</age>
+        <estActif>true</estActif>
+        <taille>1.75</taille>
+        <dateNaissance>1990-02-28</dateNaissance>
+        <heureInscription>14:30:00</heureInscription>
+        <dernierAcces>2025-08-24T14:30:00</dernierAcces>
+    </personne>
+    <personne>
+        <nom>Aubé</nom>
+        <age>75</age>
+        <estActif>false</estActif>
+        <taille>1.75</taille>
+        <dateNaissance>1950-03-04</dateNaissance>
+        <heureInscription>14:30:00</heureInscription>
+        <dernierAcces>2025-06-24T12:33:10</dernierAcces>
+    </personne>
+</personnes>

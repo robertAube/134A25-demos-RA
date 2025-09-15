@@ -1,0 +1,13 @@
+cours07_htmlPartie2\010_Depart_href.html
+cours07_htmlPartie2\011_Arrivee.html
+cours07_htmlPartie2\020_autrePage.html
+cours07_htmlPartie2\030_Images.html
+cours07_htmlPartie2\040_Audio.html
+cours07_htmlPartie2\050_Video.html
+cours07_htmlPartie2\060_Citations.html
+cours07_htmlPartie2\070_ExposantsIndices.html
+cours07_htmlPartie2\080_Abreviations.html
+cours07_htmlPartie2\090_LesTableaux.html
+cours07_htmlPartie2\100_Liens.html
+cours07_htmlPartie2\110_ListesDeDefinitions.html
+cours07_htmlPartie2\120_BalisesMeta.html

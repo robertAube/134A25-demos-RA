@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cegep">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="local" type="localType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Type réutilisable pour local -->
+    <xs:complexType name="localType">
+        <xs:sequence>
+            <xs:element name="noLocal" type="xs:string"/>
+            <xs:element name="nbEtudiant" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

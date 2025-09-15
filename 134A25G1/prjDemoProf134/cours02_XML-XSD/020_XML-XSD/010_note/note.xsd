@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="note">
+        <xs:complexType> <!-- Indique que DemoEtu-A25 contient d'autres éléments (et pas seulement du texte). -->
+            <xs:sequence>
+                <xs:element name="to" type="xs:string"/> <!-- Chacun de ces éléments est de type xs:string, ce qui signifie qu’ils contiennent du texte. -->
+                <xs:element name="from" type="xs:string"/>
+                <xs:element name="heading" type="xs:string"/>
+                <xs:element name="body" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

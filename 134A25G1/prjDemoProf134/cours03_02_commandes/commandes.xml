@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commandes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="commandes.xsd">
+
+    <commande numero="CMD001">
+        <client>
+            <nom>L'Heureux</nom>
+            <prenom>Gaston</prenom>
+        </client>
+        <cliente>
+            <nom>L'Heureux</nom>
+            <prenom>Line</prenom>
+        </cliente>
+        <produit quantite="1">
+            <nom>Souris sans fil</nom>
+            <prixUnitaire>999.99</prixUnitaire>
+        </produit>
+    </commande>
+
+    <commande numero="CMD001">
+        <client>
+            <nom>L'Heureux</nom>
+            <prenom>Gaston</prenom>
+        </client>
+        <cliente>
+            <nom>L'Heureux</nom>
+            <prenom>Yvette</prenom>
+        </cliente>
+        <produit quantite="2">
+            <nom>clavier</nom>
+            <prixUnitaire>99.99</prixUnitaire>
+        </produit>
+        <produit quantite="10">
+            <nom>écran 17 pouces</nom>
+            <prixUnitaire>199.99</prixUnitaire>
+        </produit>
+    </commande>
+</commandes>

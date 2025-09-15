@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:include schemaLocation="ClientType.xsd"/>
+    <xs:include schemaLocation="ProduitType.xsd"/>
+
+    <xs:element name="commandes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="commande" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="client" type="ClientType"/>
+                            <xs:element name="produit" maxOccurs="unbounded" type="ProduitType">
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="numero" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

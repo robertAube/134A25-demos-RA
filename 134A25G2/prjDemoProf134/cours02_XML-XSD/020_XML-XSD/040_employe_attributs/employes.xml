@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entreprise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="employes.xsd">
+    <employe id="E001" departement="Informatique">
+        <nom>Martin</nom>
+        <poste>Développeur</poste>
+    </employe>
+    <employe id="E002">
+        <nom>Julie</nom>
+        <poste>Comptable</poste>
+    </employe>
+</entreprise>

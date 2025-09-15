@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Type réutilisable pour client -->
+    <xs:complexType name="ClientType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Type réutilisable pour Produit -->
+    <xs:complexType name="ProduitType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prixUnitaire" type="xs:float"/>
+        </xs:sequence>
+        <xs:attribute name="quantite" type="xs:float" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="commandes"> <!-- racine -->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="commande" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="client" type="ClientType"/>
+                            <xs:element name="cliente" type="ClientType"/>
+                            <xs:element name="produit" maxOccurs="unbounded" type="ProduitType">
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="numero" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

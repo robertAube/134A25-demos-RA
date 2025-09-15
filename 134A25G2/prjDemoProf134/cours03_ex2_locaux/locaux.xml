@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Robert Aubé -->
+<locaux xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="locauxV3.xsd">
+    <local> <!-- premier local -->
+        <noLocal>F3507</noLocal>
+        <nbEtudiant>27</nbEtudiant>
+    </local>
+    <local>
+        <noLocal>Q3517</noLocal>
+        <nbEtudiant>28</nbEtudiant>
+    </local>
+    <local>
+        <noLocal>Q3516</noLocal>
+        <nbEtudiant>27</nbEtudiant>
+    </local>
+    <local>
+        <noLocal>Q3505</noLocal>
+        <nbEtudiant>27</nbEtudiant>
+    </local>
+</locaux>

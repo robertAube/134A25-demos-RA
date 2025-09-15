@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- auto -->
+    <xs:element name="auto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="marque" type="xs:string"/>
+                <xs:element name="modele" type="xs:string"/>
+                <xs:element name="portes" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- moto -->
+    <xs:element name="moto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="marque" type="xs:string"/>
+                <xs:element name="modele" type="xs:string"/>
+                <xs:element name="cylindree" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Racine -->
+    <xs:element name="garage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="auto" minOccurs="0" maxOccurs="unbounded"/> <!-- notez bien l'utilisation de ref -->
+                <xs:element ref="moto" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

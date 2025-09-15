@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Robert Aubé -->
+
+<cegep xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="locauxVRegex.xsd">
+    <local> <!-- premier local -->
+        <noLocal>QS2307</noLocal>
+        <nbEtudiant>237</nbEtudiant>
+    </local>
+    <local>
+        <noLocal>QS3517</noLocal>
+        <nbEtudiant>28</nbEtudiant>
+    </local>
+    <local>
+        <noLocal>QB3516</noLocal>
+        <nbEtudiant>27</nbEtudiant>
+    </local>
+    <local>
+        <noLocal>QS3505</noLocal>
+        <nbEtudiant>27</nbEtudiant>
+    </local>
+</cegep>

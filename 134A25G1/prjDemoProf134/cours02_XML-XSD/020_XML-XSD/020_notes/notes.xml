@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="notes.xsd">
+    <note>
+        <to>Partick</to>
+        <from>Lucie</from>
+        <heading>Rappel</heading>
+        <body>N'oublie pas la réunion demain.</body>
+    </note>
+    <note>
+        <to>Vincent</to>
+        <from>Sophie</from>
+        <heading>Invitation</heading>
+        <body>Tu es invité à mon anniversaire samedi.</body>
+    </note>
+</notes>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bibliotheque>
+    <livre>
+        <titre>Le petit prince</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <annee>1943</annee>
+    </livre>
+    <livre>
+        <titre>Dune</titre>
+        <auteur>Frank Hebert</auteur>
+        <annee>1965</annee>
+    </livre>
+</bibliotheque>
