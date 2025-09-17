@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>9 - Les tableaux</title>
+    <!-- La balise <style> contient les règles CSS -->
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    /*
+        Tableau avec:
+            - bordure de 1 pixel
+            - les bordures des cellules sont communes
+     */
+    table, th, td {
+        border: 3px solid blue;
+        border-collapse: collapse; /* collapse : chaque cellule a une bordure commune. separate : chaque cellule a sa propre bordure (valeur par défaut) */
+    }
+    </style>
+</head>
+<body>
+    <h2>Exercice tableau</h2>
+    <table>
+        <caption>Horaire</caption>
+        <tr> <!-- ligne 1 -->
+            <th rowspan="3">Robert</th> <!-- table data -->
+            <td></td>
+            <th>8h</th>
+            <th>9h</th>
+            <th>10h</th>
+            <th>11h</th>
+            <th>12h</th>
+            <th>13h</th>
+            <th>14h</th>
+            <th>15h</th>
+            <th>16h</th>
+        </tr>
+        <tr> <!-- ligne 2 -->
+            <th>LUNDI</th>
+            <td colspan="2">Q3516</td>
+            <td colspan="2">Q3517</td>
+            <td>D</td>
+            <td>D</td>
+            <td colspan="3">Réunion ACCD</td>
+        </tr>
+        <tr> <!-- ligne 3 -->
+            <th>MARDI</th>
+            <td colspan="3">Réunion de département</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
