@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livres>
+    <livre id="1" categorie="roman"> <!-- utilisation des attributs id et categorie -->
+        <titre>Le Petit Prince</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <annee>1943</annee>
+    </livre>
+
+    <livre id="2" categorie="science-fiction">
+        <titre>Dune</titre>
+        <auteur>Frank Herbert</auteur>
+        <anneee>1965</anneee>
+    </livre>
+</livres>

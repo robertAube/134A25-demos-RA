@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Sélecteur Universel</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        * { /* * Sélecteur universel qui sélectionne tous les éléments HTML */
+            border: 1px solid blue; /* contour */
+            padding: 5px; /* padding est l’espace entre le contenu de l’élément et sa bordure. Il agrandit l’élément de l’intérieur. */
+            margin: 5px; /* margin est l’espace entre l’élément et les autres éléments autour de lui. Il agrandit l’élément vers l’extérieur. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Sélecteur Universel</h1>
+    <p> Le Sélecteur universel <b>*</b> sélectionne tous <span>les éléments HTML</span> d’une page d’un coup.<br>
+        Mais il ne s'applique pas à certains éléments comme le &lt;br> parce que celui-ci...
+    <ul>
+    <li>n’a pas de boîte de rendu visible (pas de largeur, hauteur, contenu…)</li>
+    <li>ne peut pas recevoir de styles visuels comme margin, padding, border, etc</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.div1 /* Un bloc vert */
+{
+    background-color: lightgreen;
+}
+
+.div2 /* Un bloc gris */
+{
+    position: absolute; /* L’élément est retiré du flux normal et positionné par rapport à son ancêtre. */
+    left: 40px; /* décale l’élément vers la droite */
+    top: 50px; /* décale l’élément vers le bas */
+    background-color: lightgrey;
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color: lightblue;
+}
+
+#nomFichierCSS::after {
+    content: "040_position-absolute.css";
+}

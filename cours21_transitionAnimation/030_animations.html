@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>030_animations</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .div1, .div2, .div3 {
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        color: white;
+    }
+
+    .div1:hover {
+        animation-name: blueToYellow; /* identification du keyframes correspondant */
+        animation-duration: 4s;
+    }
+
+    @keyframes blueToYellow {
+        from {
+            background-color: deepskyblue;
+        }
+        to {
+            background-color: yellow;
+            color:black;
+        }
+    }
+
+    .div2:hover {
+        animation-name: pourcentage; /* identification du keyframes correspondant */
+        animation-duration: 8s;
+        animation-delay: 2s; /* délai avant que l'animation parte. Si la valeur est, l'animation démarrera immédiatement, mais en commençant au nombre de secondes spécifiées */
+    }
+
+    @keyframes pourcentage {
+        0% {
+            background-color: orange;
+            color: black;
+        }
+        33% {
+            background-color: yellow;
+            color: black;
+        }
+        66% {
+            background-color: blue;
+            color: white;
+        }
+        100% {
+            background-color: green;
+            color: white;
+        }
+    }
+
+    .div3:hover {
+        animation-name: moveAround; /* identification du keyframes correspondant */
+        animation-duration: 4s;
+        position: relative; /* relatif à la position initiale (pourrait être absolue)*/
+        animation-iteration-count: 3; /* nombre d'itération (pourrait être infinite)*/
+
+        /*animation-direction: reverse; !* faire d'abord fonctionner l'animation vers l'avant, puis vers l'arrière *!*/
+        /*animation-direction: alternate; !* faire d'abord fonctionner l'animation vers l'avant, puis vers l'arrière *!*/
+        /*animation-direction: alternate-reverse; !* faire d'abord tourner l'animation vers l'arrière, puis vers l'avant *!*/
+    }
+
+    @keyframes moveAround {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            background-color: yellow;
+            color: black;
+            left: 200px;
+            top: 0px;
+        }
+        50% {
+            background-color: blue;
+            color: white;
+            left: 200px;
+            top: 200px;
+        }
+        75% {
+            background-color: green;
+            color: white;
+            left: 0px;
+            top: 200px;
+        }
+        100% {
+            background-color: red;
+            color: white;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    </style>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div class="container">
+        <div class="div1">blue To Yellow</div>
+    </div>
+    <div class="container">
+        <div class="div2">pourcentage</div>
+    </div>
+    <div class="container">
+        <div class="div3">moveAround</div>
+    </div>
+
+    <p><b>Note:</b> Lorsqu'une animation est terminée, elle revient à son style d'origine</p>
+
+</body>
+</html>

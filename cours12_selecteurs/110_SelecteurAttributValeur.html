@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Sélecteur Attribut valeur</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* [sel1] */
+        /* Appliquer un style sur tous les éléments possédant l’attribut spécifié entre [] */
+        [class] { /* ici tous les éléments qui ont un class, on applique le style */
+            color: orange;
+        }
+
+        /* [sel1=valeur] */
+        /* Appliquer un style sur tous les éléments possédant l’attribut et la valeur spécifiée entre [] */
+        [class="pImportant"] { /* ici tous les éléments qui ont un id avec l'attribut lienCegep, on applique le style */
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
+/* même chose que ... mais c'Est pour l'exemple */
+/*        .pImportant {*/
+/*            color: red;*/
+/*            font-weight: bold;*/
+/*            font-size: 30px;*/
+/*        } */
+    </style>
+</head>
+<body>
+    <h1>Sélecteur [attribut="valeur"]</h1>
+    <div class="div1">
+        <p>Un premier paragraphe dans un div</p>
+        <div>
+            <p>Un 2ième paragraphe dans un sous div</p>
+        </div>
+        <p class="pImportant">Un 3ième paragraphe <strong>important</strong> dans un div</p>
+    </div>
+    <p class="pImportant">Ce paragraphe est hors d'un div</p>
+    <div>
+        <a class="lienCegep" href="https://www.cegeplimoilou.ca/">Cégep Limoilou</a>
+    </div>
+</body>
+</html>

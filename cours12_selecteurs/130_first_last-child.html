@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de :first-child et :last-child</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /*Les pseudo-classes
+            :first-child et
+            :last-child en CSS
+        sont utilisées pour cibler
+        le premier et le dernier enfant d’un élément parent, respectivement.*/
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de :first-child et :last-child</h1>
+    <ul>
+        <li>Premier élément niveau 1</li>
+        <li>Deuxième élément niveau 1</li>
+        <ul> <!-- Troisième élément niveau 1  -->
+            <li>Premier élément niveau 2</li>
+            <li>Deuxième élément niveau 2</li>
+            <li>Troisième élément niveau 2</li>
+            <li>Dernier élément niveau 2</li>
+        </ul>
+        <li>Quatrième élément niveau 1</li>
+        <li>Dernier élément niveau 1</li>
+    </ul>
+</body>
+</html>

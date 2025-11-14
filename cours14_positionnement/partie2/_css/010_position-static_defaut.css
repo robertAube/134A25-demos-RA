@@ -1,0 +1,16 @@
+.div1 /* Un bloc vert */
+{
+    background-color:lightgreen;
+}
+.div2 /* Un bloc gris */
+{
+    background-color:lightgrey;
+}
+.div3 /* Un bloc bleu */
+{
+    background-color:lightblue;
+}
+
+#nomFichierCSS::after {
+    content: "010_position-static_defaut.css";
+}

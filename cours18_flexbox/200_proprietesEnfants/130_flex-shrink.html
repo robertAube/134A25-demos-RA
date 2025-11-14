@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-shrink</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* flex-shrink en CSS définit le facteur de rétrécissement d’un élément flexible.
+         Si la taille totale des éléments flexibles dépasse celle du conteneur,
+          les éléments se rétréciront selon leur facteur flex-shrink12 */
+        .shrink-0 {
+            flex-shrink: 0; /* L’élément ne rétrécira pas même si nécessaire. */
+        }
+
+        .shrink-1 {
+            flex-shrink: 1; /* L’élément se rétrécira normalement si nécessaire. */
+        }
+
+        .shrink-2 {
+            flex-shrink: 2; /* L’élément se rétrécira 2 x plus vite si nécessaire. */
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-shrink</h1>
+    <p>
+        définit le facteur de rétrécissement d’un élément flexible.
+        Si la taille totale des éléments flexibles dépasse celle du conteneur,
+        les éléments se rétréciront selon leur facteur flex-shrink
+    </p>
+    <div class="txtSurligner">Jouer avec largeur de la fenêtre pour voir l'effet.</div>
+    <h2>flex-shrink: 0</h2>
+    <div class="container">
+        <div class="item shrink-0"><p>Élément 1 - shrink-0</p>
+            <p>L’élément ne rétrécira pas même si nécessaire.</p></div>
+        <div class="item shrink-0"><p>Élément 2 - shrink-0</p>
+            <p>L’élément ne rétrécira pas même si nécessaire.</p></div>
+        <div class="item shrink-0"><p>Élément 3 - shrink-0</p>
+            <p>L’élément ne rétrécira pas même si nécessaire.</p></div>
+    </div>
+
+    <h2>flex-shrink: 1</h2>
+    <div class="container">
+        <div class="item shrink-0"><p>Élément 1 - shrink-0</p>
+            <p>L’élément ne rétrécira pas même si nécessaire.</p></div>
+        <div class="item shrink-1"><p>Élément 2 - shrink-1</p>
+            <p>L’élément se rétrécira normalement si nécessaire.</p></div>
+        <div class="item shrink-1"><p>Élément 3 - shrink-1</p>
+            <p>L’élément se rétrécira normalement si nécessaire.</p></div>
+    </div>
+
+    <h2>flex-shrink: 2</h2>
+    <div class="container">
+        <div class="item shrink-0"><p>Élément 1 - shrink-0</p>
+            <p>L’élément ne rétrécira pas même si nécessaire.</p></div>
+        <div class="item shrink-1"><p>Élément 2 - shrink-1</p>
+            <p>L’élément se rétrécira normalement si nécessaire.</p></div>
+        <div class="item shrink-2"><p>Élément 3 - shrink-2</p>
+            <p> L’élément se rétrécira 2 x plus vite si nécessaire.</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.div1 /* Un bloc vert */
+{
+    background-color: lightgreen;
+}
+
+.div2 /* Un bloc gris */
+{
+    background-color: lightgrey;
+    position: sticky; /* agit comme relative */ /* Si la page est scrollé, il est dans la zone visible de son conteneur. */
+    left: 50px; /* décale l’élément vers la droite */
+    top: 22px; /* décale l’élément vers le bas */
+}
+.div2::after {
+    content: "(Je reste collé visible quand tu scrolles la page!)";
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color: lightblue;
+}
+
+#nomFichierCSS::after {
+    content: "055_position-sticky.css";
+}

@@ -1,0 +1,24 @@
+/*
+L’espace entre le <body> et un <p> à l’intérieur du <body> provient des marges
+par défaut appliquées par les navigateurs aux éléments de paragraphe (<p>).
+Ces marges par défaut sont généralement présentes en haut et en bas
+des paragraphes pour améliorer la lisibilité du texte.
+ */
+* { /* sélecteur universel */
+    border: 1px solid blue;
+    /*margin: 0; !* Supprime les marges par défaut  *!*/
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.div1, .div2 /* div1 et div2 de 100 pixels de large par 75 pixels de haut */
+{
+    width: 100px;
+    height: 75px;
+}
+
+#nomFichierCSS {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+}

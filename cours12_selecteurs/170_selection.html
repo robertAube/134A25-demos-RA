@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de ::selection</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /*::selection modifier l’apparence de la partie d’un élément sélectionnée par l’utilisateur avec la souris */
+        /*Applicable seulement sur des éléments de type block*/
+        /*Supporte les propriétés:*/
+        /*- color*/
+        /*- background*/
+        /*- cursor*/
+        /*- outline*/
+        p::selection {
+            background: yellow;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemple de ::selection</h1>
+    <p>Sélectionnez ce texte pour voir l'effet du pseudo-élément ::selection.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Modèle de Boîte</title>
+    <link rel="stylesheet" href="000_general.css">
+    <style>
+        div {
+            background-color: lightgray; /* couleur de remplissage */
+            width: 500px;
+        }
+
+        h1 {
+            background-color: chocolate; /* couleur de remplissage */
+            width: 200px;
+            height: 100px;
+        }
+
+        #paragraphe1 {
+            background-color: dodgerblue; /* couleur de remplissage */
+            width: 400px;
+            padding: 10px; /* Rembourrage: L'espace entre le contenu et la bordure. */
+            border: 5px solid blue; /* Bordure: La bordure entourant le padding et le contenu */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Modèle de Boîte</h1>
+        <p id="paragraphe1">
+            paragraphe1 : width 400px dépasse celui du div
+        </p>
+        <p>paragraphe2</p>
+    </div>
+</body>
+</html>

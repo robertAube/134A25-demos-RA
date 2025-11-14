@@ -1,0 +1,1 @@
+dir /S /b /a-d > rep.text

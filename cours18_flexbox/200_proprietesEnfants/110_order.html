@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple order</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        .premier {
+            order: 1; /* Cet élément apparaîtra en premier */
+        }
+
+        .deuxieme {
+            order: 2; /* Cet élément apparaîtra en deuxième */
+        }
+
+        .troisieme {
+            order: 3; /* Cet élément apparaîtra en troisième */
+    }
+    </style>
+
+</head>
+<body>
+    <h1>order</h1>
+    <p>Change l’ordre d’affichage des éléments dans un conteneur flex, sans modifier l’ordre dans le HTML.
+    </p>
+    <div class="container">
+        <div class="item deuxieme">Élément 1</div>
+        <div class="item premier">Élément 2</div>
+        <div class="item troisieme">Élément 3</div>
+    </div>
+</body>
+</html>

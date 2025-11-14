@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>50 - Hide Element On Screen Size</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .example {
+        background-color: lightskyblue;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        div.example {
+            display: none;
+        }
+    }
+    </style>
+    <script src="_script/getLargeurScreen.js"></script>
+    <link rel="stylesheet" href="_css/010_affichageLargeurEcran.css">
+</head>
+<body>
+    <h2>Masquer les éléments sur différentes tailles d'écran</h2>
+    <p>Redimensionnez la fenêtre du navigateur pour voir l'effet.</p>
+
+    <div class="example">Caché si la largeur du navigateur est de 600px ou moins</div>
+
+    <p>Lorsque la largeur du navigateur est de 600 px ou moins, masquez l'élément div.</p>
+    <div id="affichageLargeurEcran"></div>
+</body>
+</html>

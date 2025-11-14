@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>align-self</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        .large {
+            padding: 40px; /* Taille de police plus grande pour démontrer l'alignement */
+        }
+
+        /* align-items permet de définir l’alignement des éléments flexibles
+        le long de l’axe transversal (vertical par défaut) dans un conteneur flexbox */
+        .flex-start {
+            align-items: flex-start; /* alignés au début du conteneur */
+        }
+
+        .flex-end {
+            align-items: flex-end; /* alignés à la fin du conteneur */
+        }
+
+        .center {
+            align-items: center; /* centrés dans le conteneur */
+        }
+
+        .baseline {
+            align-items: baseline; /* alignés selon leur ligne de base */
+        }
+
+        .stretch {
+            align-items: stretch; /* étirés pour remplir le conteneur (valeur par défaut)  */
+        }
+
+        .as_auto, .as_flex-start, .as_flex-end, .as_center, .as_baseline, .as_stretch {
+            font-family: Consolas, monospace;
+        }
+
+        /* align-self permet de définir l’alignement d’un élément flex ou grid par rapport
+         à son conteneur.
+         Permet de personnaliser l’alignement d’un seul enfant, indépendamment des autres.
+         */
+        .as_auto {
+            align-self: auto; /* Utilise la valeur de align-items du conteneur */
+        }
+
+        .as_flex-start {
+            align-self: flex-start; /* Aligne l’élément au début du conteneur. */
+        }
+
+        .as_flex-end {
+            align-self: flex-end; /* Aligne l’élément à la fin du conteneur. */
+        }
+
+        .as_center {
+            align-self: center; /* Centre l’élément dans le conteneur. */
+        }
+
+        .as_baseline {
+            align-self: baseline; /* Aligne l’élément sur la ligne de base de son conteneur. */
+        }
+
+        .as_stretch {
+            align-self: stretch; /*  Étire l’élément pour remplir l’espace disponible */
+        }
+    </style>
+</head>
+<body>
+    <h1>align-self</h1>
+    <p>
+        align-self définit l’alignement d’un élément flex par rapport à son conteneur. Elle peut
+        prendre plusieurs valeurs, chacune ayant un effet différent sur l’alignement de l’élément.
+    </p>
+
+    <h2>Sans la propriété align-items</h2>
+    Les éléments sont étirés pour remplir le conteneur (valeur par défaut = stretch)
+    <div class="container">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <div class="container">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item as_flex-end">align-self: flex-end;</div>
+    </div>
+
+    <h2>container -> align-items: flex-start;</h2>
+    Les éléments sont alignés au début du conteneur.
+    <div class="container flex-start">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <div class="container flex-start">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item as_stretch">align-self: stretch;</div>
+    </div>
+
+    <h2>container -> align-items: flex-end;</h2>
+    Les éléments sont alignés à la fin du conteneur.
+    <div class="container flex-end">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <div class="container flex-end">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item as_center">align-self: center;</div>
+    </div>
+
+    <h2>container -> align-items: baseline;</h2>
+    Les éléments sont alignés selon leur ligne de base.
+    <div class="container baseline">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <div class="container baseline">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément large 2</div>
+        <div class="item as_flex-start"> align-self: flex-start;</div>
+    </div>
+
+    <h2>container -> align-items: center;</h2>
+    Les éléments sont centrés dans le conteneur.
+    <div class="container center">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <div class="container center">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément 2</div>
+        <div class="item as_auto">align-self: auto;</div>
+    </div>
+
+    <h2>container -> align-items: stretch;</h2>
+    Les éléments sont étirés pour remplir le conteneur (valeur par défaut)
+    <div class="container stretch">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <div class="container stretch">
+        <div class="item">Élément 1</div>
+        <div class="item large">Élément 2</div>
+        <div class="item as_baseline">align-self: baseline;</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-basis</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .container {
+        width: 500px;
+    }
+
+    .container > div {
+        text-align : center;
+    }
+
+
+    .box100px:nth-child(odd), .box50p:nth-child(odd), .box30p:nth-child(odd), .box20p:nth-child(odd), .box10p:nth-child(odd) {
+        background-color: yellowgreen;
+    }
+    .box100px:nth-child(even), .box50p:nth-child(even), .box30p:nth-child(even), .box20p:nth-child(even), .box10p:nth-child(even) {
+        background-color: #FF5EFA;
+    }
+
+
+    .box100px {
+        flex-basis: 100px; /* Taille initiale de 100 pixels */
+    }
+
+    .box50p {
+        flex-basis: 50%; /* Taille initiale de 10% du conteneur */
+    }
+
+    .box30p {
+        flex-basis: 30%; /* Taille initiale de 10% du conteneur */
+    }
+
+    .box20p {
+        flex-basis: 20%; /* Taille initiale de 10% du conteneur */
+    }
+
+    .box10p {
+        flex-basis: 10%; /* Taille initiale de 10% du conteneur */
+    }
+
+    </style>
+</head>
+<body>
+    <p>
+        La propriété flex-basis détermine la taille initiale principale d’un élément flexible.
+    </p>
+    <div class="container">
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+    </div>
+    <div class="container">
+        <div class="box50p">50%</div>
+        <div class="box30p">30%</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+    </div>
+    <div class="container">
+        <div class="box100px">100px</div>
+        <div class="box100px">100px</div>
+        <div class="box100px">100px</div>
+        <div class="box10p">10%</div>
+        <div class="box10p">10%</div>
+    </div>
+</body>
+</html>

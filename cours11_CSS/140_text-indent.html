@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de text-indent</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    p {
+        font-size: 14px;
+        border: 2px solid black;
+    }
+
+    .text-indent_px {
+        text-indent: 40px;
+    }
+
+    .text-indent_NegativePx {
+        text-indent: -20px;
+    }
+
+    .text-indent_percentage {
+        text-indent: 50%;
+    }
+
+    .text-indent_px-Hanging {
+        text-indent: 40px hanging;
+    }
+
+    .text-indent_px-eachLine {
+        text-indent: 40px each-line;
+    }
+
+    .text-indent_px-hanging-eachLine {
+        text-indent: 40px hanging each-line;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemple de text-indent</h1>
+    <p class="text-indent_px">1- Indente la première ligne d’une valeur de longueur fixe.<br>
+        Pas applicable après un saut de ligne forcé &lt;br>. Ab, amet assumenda deleniti distinctio dolorem dolorum
+    eius est, facilis illo iure laudantium nesciunt nostrum porro possimus repellat sit soluta, ullam unde!
+    </p>
+    <p class="text-indent_NegativePx">2- Indente la première ligne d’une valeur de longueur fixe négative.<br>
+        Pas applicable après un saut de ligne forcé &lt;br>.  Ab, amet assumenda deleniti distinctio dolorem dolorum
+        eius est, facilis illo iure laudantium nesciunt nostrum porro possimus repellat sit soluta, ullam unde!
+    </p>
+    <p class="text-indent_percentage">3- Indente la première ligne d’une valeur de longueur fixe d’un pourcentage de la largeur du
+        conteneur parent.<br>
+        Pas applicable après un saut de ligne forcé &lt;br>. Ab, amet assumenda deleniti distinctio dolorem dolorum
+        eius est, facilis illo iure laudantium nesciunt nostrum porro possimus repellat sit soluta, ullam unde!
+    </p>
+    <p class="text-indent_px-Hanging">4- Ceci indente toutes les lignes sauf la première un texte (indentation suspendue) de 40
+        pixels.<br>
+        Pas applicable après un saut de ligne forcé &lt;br>. Ab, amet assumenda deleniti distinctio dolorem dolorum
+        eius est, facilis illo iure laudantium nesciunt nostrum porro possimus repellat sit soluta, ullam unde!
+    </p>
+    <p class="text-indent_px-eachLine">5- Ceci est un texte avec une indentation de 40 pixels pour chaque ligne après un saut de ligne
+        forcé &lt;br>.<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, amet assumenda deleniti distinctio dolorem dolorum
+        eius est, facilis illo iure laudantium nesciunt nostrum porro possimus repellat sit soluta, ullam unde!
+    </p>
+    <p class="text-indent_px-hanging-eachLine">6- Ceci est un texte avec une indentation suspendue de 40 pixels pour chaque ligne
+        après un saut de ligne forcé &lt;br>.<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, amet assumenda deleniti distinctio dolorem dolorum
+        eius est, facilis illo iure laudantium nesciunt nostrum porro possimus repellat sit soluta, ullam unde!
+    </p>
+</body>
+</html>

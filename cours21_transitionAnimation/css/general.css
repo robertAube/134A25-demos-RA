@@ -1,0 +1,27 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+h2, h3 {
+    font-family: Consolas, monospace;
+}
+
+/* conteneur vert */
+.container {
+    display: flex;
+
+    width: fit-content;
+    border: 3px solid green;
+
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.container > div { /* sélectionne tous les éléments div qui sont des enfants directs de la classe container */
+    height: fit-content;
+    width: fit-content;
+
+    border: 3px solid dodgerblue;
+    font-family: Consolas, monospace;
+    font-size: large;
+}

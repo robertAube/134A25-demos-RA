@@ -1,0 +1,21 @@
+.div1 /* Un bloc vert  */
+{
+    background-color: lightgreen;
+}
+
+.div2 /* Un bloc gris */
+{
+    position: relative; /* place l'élément par rapport à sa position initiale. /* Il peut y avoir superposition. Devient flottant */
+    left: 10px; /* Déplacement de 25 px à partir de la "gauche" initial */
+    top: 20px; /* Déplacement de 10 px à partir du "top" initial */
+    background-color: lightgrey;
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color: lightblue;
+}
+
+#nomFichierCSS::after {
+    content: "030_position-relative.css";
+}

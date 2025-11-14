@@ -1,0 +1,23 @@
+.div1 /* Un bloc vert  */
+{
+    background-color: lightgreen;
+}
+.div2 /* Un bloc gris  */
+{
+    position: fixed; /* place le bloc par rapport au coin supérieur gauche du navigateur
+     et peut chevaucher d'autres éléments. */
+    left: 40px;
+    top: 50px;
+    background-color:lightgrey;
+}
+.div2::after {
+    content: "(Je reste collé visible quand tu scrolles la page!)";
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color:lightblue;
+}
+#nomFichierCSS::after {
+    content: "050_position-fixed.css";
+}

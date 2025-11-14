@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecteur []</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* [sel1] */
+        /* Appliquer un style sur tous les éléments possédant l’attribut spécifié entre [] */
+        [id] { /* ici tous les éléments qui ont un attribut id, on applique le style */
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecteur []</h1>
+    <div id="div1">
+        <p>Un premier paragraphe dans un div</p>
+        <div>
+            <p>Un 2ième paragraphe dans un sous div</p>
+        </div>
+    </div>
+    <p id="p3">Un 3ième paragraphe <strong>important</strong> dans un div</p>
+    <p>Ce paragraphe est hors d'un div</p>
+    <a id="lienCegep" href="https://www.cegeplimoilou.ca/">Cégep Limoilou</a>
+</body>
+</html>

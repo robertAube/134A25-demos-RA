@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecteur +</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* sel1 + sel2 { } */
+        /* Appliquer un style sur tous les éléments de type sel2 de même niveau et suivant immédiatement un élément de type sel1 */
+        div + p  { /* ici si p suit un div, on applique le style */
+            background-color: orange;
+        }
+        div + p + p { /* ici si p suit un p et un div, on applique le style */
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecteur +</h1>
+    <div>
+        <p>Un premier paragraphe dans un div</p>
+        <div>
+            <p>Un 2ième paragraphe dans un div</p>
+        </div>
+        <p>Un 3ième paragraphe <strong>important</strong> qui <b>suit</b> un div</p>
+    </div>
+    <div>
+        <p>Un paragraphe dans un 2e div</p>
+    </div>
+    <p>Ce paragraphe suit un div</p>
+    <p>Un paragraphe suit un autre paragraphe</p>
+    <p>Encore un paragraphe qui suit un autre paragraphe</p>
+</body>
+</html>

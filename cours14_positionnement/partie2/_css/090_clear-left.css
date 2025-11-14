@@ -1,0 +1,23 @@
+.div1 /* Un bloc vert static de 100 pixels de large par 75 pixels de haut */
+{
+    background-color: lightgreen;
+    width: 100px;
+    height: 75px;
+}
+
+.div2 /* Un bloc gris */
+{
+    background-color: lightgrey;
+    width: 100px;
+    height: 75px;
+    float: left; /* bloc flottant à gauche */
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color: lightblue;
+    clear: left; /* ignore le bloc flottant du div précédent */
+}
+#nomFichierCSS::after {
+    content: "090_clear-left.css";
+}

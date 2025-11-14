@@ -1,0 +1,19 @@
+.div1 /* Un bloc vert static de 100 pixels de large par 75 pixels de haut */
+{
+    background-color: lightgreen;
+}
+
+.div2 /* Un bloc gris */
+{ /* permet de faire un contournement */
+    background-color: lightgrey;
+    float: right; /* Place un élément sur le côté gauche ou droit de son conteneur. ce qui permet un habillage de texte encadré autour de lui.  L'élément est retiré du flux normal de la page, tout en restant une partie de ce flux (contrairement au positionnement absolu). */
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color: lightblue;
+}
+
+#nomFichierCSS::after {
+    content: "080_float-right.css";
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        p:first-child { /*représente le premier élément d’un groupe d’éléments frères. */
+            font-family: monospace;
+            font-size: 16pt;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>flex</h1>
+    <p>
+        Définit la capacité d’un élément flexible à modifier ses dimensions pour remplir l’espace disponible dans son
+        conteneur.
+    </p>
+    <p>
+        Elle combine les propriétés flex-grow, flex-shrink et flex-basis
+    </p>
+    <div class="code">
+        flex: &lt;flex-grow> &lt;flex-shrink> &lt;flex-basis>;
+    </div>
+    <div class="txtSurligner">Jouer avec largeur de la fenêtre pour voir l'effet.</div>
+
+    <div class="container">
+        <div class="item" style="flex: 1;"><p>flex: 1;</p><p>prend 1 part de l'espace</p></div>
+        <div class="item" style="flex: 2;"><p>flex: 2;</p><p>prend 2 part de l'espace</p></div>
+        <div class="item" style="flex: 1;"><p>flex: 1;</p><p>prend 1 part de l'espace</p></div>
+    </div>
+
+    <div class="container">
+        <div class="item" style="flex: 1;"><p>flex: 1;</p><p>prend 1 part de l'espace</p></div>
+        <div class="item" style="flex: 2;"><p>flex: 2;</p><p>prend 2 part de l'espace</p></div>
+        <div class="item" style="flex: 1 2 200px ;">
+            <p>flex: 1 2 200px;</p><p>commence avec une base de 200px</p>
+            <p>peut grandir (flex-grow 1)</p>
+            <p>et rétrécir (flex-shrink 2).</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="item" style="flex: 1;">
+            <p>flex: 1;</p>
+            <p>Prend 1 part de l'espace</p>
+        </div>
+        <div class="item" style="flex: 2 1;">
+            <p>flex: 2 1;</p>
+            <p>Grandit et prend 2 parts d’espace disponible (flex-grow: 2)</p>
+        </div>
+        <div class="item" style="flex: 2 30px;">
+            <p>flex: 2 30px;</p>
+            <p>Taille initiale de l’élément est 30px (flex-basis: 30px)</p>
+            <p>flex-shrink par défaut = 1 (car non spécifié)</p>
+        </div>
+        <div class="item" style="flex: 2 4 10%;">
+            <p>flex: 2 4 10%;</p>
+            <p>Commence avec 10% de la largeur du conteneur.</p>
+            <p>Grandit avec un ratio de 2 (2 plus que ceux avec flex-grow: 1).</p>
+            <p>Rétrécit plus agressivement (ratio 4) si l’espace est limité</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#mainDiv {
+    background-image: url("../../_images/goodall-C2-715x480.png");
+}
+.boite {
+    padding: 10px; /* Rembourrage: L'espace entre le contenu et la bordure. */
+    margin: 35px; /* Marge: L'espace externe autour de l'élément. */
+}
+.OmbreSimple { /* Ombre simple */
+    box-shadow: 10px 10px 5px grey; /* droite bas floutage couleur */
+    background-color: lightblue;
+}
+.OmbreAvecFlouEtEtalement { /* Ombre avec flou et étalement */
+    box-shadow: 15px 15px 15px rgb(0, 255, 0); /* rgba(rouge, vert, bleu) */
+    background-color: lightgreen;
+}
+.OmbreAvecFlouEtEtalementTransparence { /* Ombre avec flou et étalement */
+    box-shadow: 15px 15px 15px rgba(0, 255, 0, 0.5);
+    /* La quatrième valeur est 0.5, ce qui représente l’opacité de la couleur. */
+    /* Une valeur de 0.9 signifie que la couleur est très opaque (90% opaque et 10% transparente). */
+    background-color: lightgreen;
+}
+.OmbreInterieure { /* Ombre intérieure */
+    /* inset – Change l'ombre d'une ombre de boîte extérieure en ombre de boîte intérieure (comme si le contenu était enfoncé dans la boîte). */
+    box-shadow: inset 0px 0px 10px black;
+    background-color: lightcoral;
+}
+.OmbresMultiples { /* Ombres multiples */
+    background-color: lightgoldenrodyellow;
+    box-shadow: 3px 3px 5px red, -3px -3px 5px blue;
+}
+
+

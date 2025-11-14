@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>align-content</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .container {
+        height: 350px;
+        flex-wrap: wrap; /* Les éléments vont à la ligne suivante si nécessaire dans leur ordre de déclaration */
+    }
+    .item {
+        width: 100%;
+        margin: 2px;
+    }
+
+    .flex-start {
+        align-content: start; /* alignés au début du conteneur (défaut)*/
+    }
+
+    .flex-end {
+        align-content: end; /* alignés à la fin du conteneur */
+    }
+
+    .center {
+        align-content: center; /* centrés dans le conteneur */
+    }
+
+    .space-between {
+        align-content: space-between;
+        /* L'élément du début et de fin sont placé aux extrémités
+        puis l'espace est réparti de manière égale entre tous les éléments */
+    }
+
+    .space-around {
+        align-content: space-around;
+        /* espace est réparti de manière égale autour des éléments. (1/2 - 1 - 1 - 1/2) */
+    }
+
+    .space-evenly {
+        align-content: space-evenly;
+        /* espace est réparti de manière égale entre et autour des éléments. (1 - 1 - 1 - 1) */
+    }
+
+    .stretch {
+        align-content: stretch;
+        /* espace est réparti de manière égale entre et autour des éléments. (1 - 1 - 1 - 1) */
+    }    </style>
+</head>
+<body>
+    <h1>align-content</h1>
+    <p>utilisée avec display: flex lorsqu’il y a plusieurs lignes d’éléments dans un conteneur.
+        Contrôle l’alignement des lignes dans le conteneur sur l’axe vertical.</p>
+    <h2>sans align-content</h2>
+    Valeur par défaut : stretch
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: stretch;</h2>
+    L’espace est retiré autour des éléments. (0 - 0 - 0 - 0) Les éléments sont étirés.
+    <div class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: flex-start;</h2>
+    Les éléments sont alignés au début du conteneur. (valeur par défaut)
+    <div class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: flex-end;</h2>
+    Les éléments sont alignés à la fin du conteneur.
+    <div class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: center</h2>
+    Les éléments sont centrés dans le conteneur.
+    <div class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: space-between</h2>
+    L'élément du début et de fin sont placé aux extrémités puis l'espace est réparti de manière égale entre tous les
+    éléments. (0 - 1 - 1 - 0)
+    <div class="container space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: space-around</h2>
+    L’espace est réparti de manière égale autour des éléments. (1/2 - 1 - 1 - 1/2)
+    <div class="container space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>align-content: space-evenly</h2>
+    L’espace est réparti de manière égale entre et autour des éléments. (1 - 1 - 1 - 1)
+    <div class="container space-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+</body>
+</html>

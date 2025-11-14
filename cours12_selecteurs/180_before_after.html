@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de ::before et ::after</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plut?t dans les fichiers css */
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: green;
+        }
+
+        p::after {
+            content: " [fin]";
+            font-weight: bold;
+            color: green;
+        }
+
+        .divImageC2::after {
+            content: url("../_images/c2b_625x380.jpg");
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de ::before et ::after</h1>
+    <p>Ceci est un exemple de texte.</p>
+    <p>Ceci est un autre exemple de texte.</p>
+    <div class="divImageC2"></div>
+</body>
+</html>

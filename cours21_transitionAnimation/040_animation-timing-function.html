@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>040_animation-timing-function</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .animation {
+        position: relative;
+        animation: monMove 5s;
+
+        animation-fill-mode: forwards; /* demeuré en place à la fin du déplacement */
+    }
+
+    .div1 {
+        animation-timing-function: linear; /* l’animation se déroule à une vitesse constante du début à la fin */
+    }
+
+    .div2 {
+        animation-timing-function: ease; /* Commence lentement, accélère au milieu, puis ralentit à la fin */
+    }
+
+    .div3 {
+        animation-timing-function: ease-in; /* Commence lentement et accélère progressivement */
+    }
+
+    .div4 {
+        animation-timing-function: ease-out; /* Commence rapidement et ralentit vers la fin */
+    }
+
+    .div5 {
+        animation-timing-function: ease-in-out; /* Commence lentement, accélère au milieu, puis ralentit à nouveau vers la fin */
+    }
+
+
+    @keyframes monMove {
+        from {
+            left: 0px;
+        }
+        to {
+            left: 300px;
+        }
+    }
+
+    </style>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <p>La propriété <strong>animation-timing-function</strong> spécifie la courbe de vitesse de l'animation.</p>
+    <p>L'exemple suivant montre quelques-unes des différentes courbes de vitesse qui peuvent être utilisées :</p>
+
+    <h2>animation-timing-function: linear;</h2>
+    <p>Vitesse constante du début à la fin</p>
+    <div class="container">
+        <div class="div1 animation">linear</div>
+    </div>
+
+    <h2>animation-timing-function: ease;</h2>
+    <p>Commence lentement, accélère au milieu, puis ralentit à la fin</p>
+    <div class="container">
+        <div class="div2 animation">ease</div>
+    </div>
+
+    <h2>animation-timing-function: ease-in;</h2>
+    <p>Commence lentement et accélère progressivement</p>
+    <div class="container">
+        <div class="div3 animation">ease-in</div>
+    </div>
+
+    <h2>animation-timing-function: ease-out;</h2>
+    <p>Commence rapidement et ralentit vers la fin</p>
+    <div class="container">
+        <div class="div4 animation">ease-out</div>
+    </div>
+
+    <h2>animation-timing-function: ease-in-out;</h2>
+    <p>Commence lentement, accélère au milieu, puis ralentit à nouveau vers la fin. (Plus symétrique qu'ease) </p>
+    </div>
+    <div class="container">
+        <div class="div5 animation">ease-in-out</div>
+    </div>
+</body>
+</html>

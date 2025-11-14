@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+.code {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.code > p {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+

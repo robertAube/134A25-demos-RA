@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Éléments block vs inline</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /*
+        Éléments Block
+        Occupent toute la largeur disponible : Un élément block s’étend sur toute la largeur de son conteneur parent.
+        Commencent sur une nouvelle ligne : Chaque élément block commence sur une nouvelle ligne, ce qui signifie qu’il force un retour à la ligne avant et après lui.
+        Peuvent contenir d’autres éléments block et inline.
+        Par exemple, les balises <div>, <h1>, <p>, <ol>, <ul> sont de type block.
+        */
+        p, h1, div { /* ici on veut mettre les élément block bleu */
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+
+        /*
+        Éléments Inline
+        Occupent seulement la largeur nécessaire : Un élément inline occupe seulement l’espace nécessaire pour son contenu.
+        Ne commencent pas sur une nouvelle ligne : Les éléments inline ne forcent pas de retour à la ligne, ils s’affichent sur la même ligne que les éléments précédents et suivants.
+        Ne peuvent contenir que d’autres éléments inline.
+        Par exemple, les balises <span>, <a>, <strong>, <em>, <img>.
+         */
+        span { /* ici on veut mettre les élément inline vert */
+            background-color: lightgreen;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Éléments block & inline</h1>
+    <div class="block">
+        <p>
+            Les balises &lt;div> et &lt;span> sont toutes deux utilisées en HTML pour structurer
+            et organiser le contenu.
+        </p>
+        <p>L'élément &lt;div> est un élément de <span>type block</span> utilisé pour regrouper des
+            sections de contenu ou des éléments.</p>
+
+        <p>L'élément &lt;span> est un élément de <span>type inline</span> utilisé pour styliser des
+            parties de texte à l’intérieur d’un paragraphe ou d'un bloc.</p>
+    </div>
+</body>
+</html>

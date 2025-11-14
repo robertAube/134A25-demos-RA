@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-grow</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* flex-grow définit
+        la capacité d’un élément flexible (flex item) à croître pour occuper l’espace disponible dans un conteneur
+         flexible (flex container). */
+        .grow-0 {
+            flex-grow: 0; /* L’élément ne grandira pas pour occuper l’espace disponible. C’est la valeur par défaut. */
+        }
+
+        .grow-1 {
+            flex-grow: 1;
+            /* L’élément prend une part égale de l’espace disponible par rapport aux autres éléments ayant également une valeur de flex-grow définie. */
+        }
+
+        .grow-2 {
+            flex-grow: 2;
+            /* n (où n est un nombre positif) : L’élément prendra une part proportionnelle de l’espace disponible en fonction de la valeur de n.  */
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-grow</h1>
+    <p>Définit la capacité d’un élément flexible (flex item) à croître pour occuper l’espace disponible
+        dans un conteneur flexible (flex container). </p>
+    <div class="txtSurligner">Jouer avec largeur de la fenêtre pour voir l'effet.</div>
+    <h2>flex-grow: 0-0-0</h2>
+    L’élément ne grandira pas pour occuper l’espace disponible. C’est la valeur par défaut. (0 - 0 - 0)
+    <div class="container">
+        <div class="item grow-0">Élément grow-0</div>
+        <div class="item grow-0">Élément grow-0</div>
+        <div class="item grow-0">Élément grow-0</div>
+    </div>
+
+    <h2>flex-grow: 1-1-1</h2>
+    L’élément prendra une part égale de l’espace disponible par rapport aux autres éléments ayant également une valeur
+    de flex-grow définie. (1 - 1 - 1)
+    <div class="container">
+        <div class="item grow-1">Élément grow-1</div>
+        <div class="item grow-1">Élément grow-1</div>
+        <div class="item grow-1">Élément grow-1</div>
+    </div>
+
+    <h2>flex-grow: 0-1-1</h2>
+    L’élément prendra une part égale de l’espace disponible par rapport aux autres éléments ayant également une valeur
+    de flex-grow définie. (0 - 1 - 1)
+    <div class="container">
+        <div class="item grow-0">Élément grow-0</div>
+        <div class="item grow-1">Élément grow-1</div>
+        <div class="item grow-1">Élément grow-1</div>
+    </div>
+
+    <h2>flex-grow: 0-1-2</h2>
+    n (où n est un nombre positif) : L’élément prendra une part proportionnelle de l’espace disponible en fonction de la
+    valeur de n.  (0 - 1 - 2)
+    <div class="container">
+        <div class="item grow-0">Élément grow-0</div>
+        <div class="item grow-1">Élément grow-1</div>
+        <div class="item grow-2">Élément grow-2</div>
+    </div>
+</body>
+</html>

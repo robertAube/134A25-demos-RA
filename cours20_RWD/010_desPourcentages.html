@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>10 - Des Pourcentages</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    * {
+        border: 1px solid black;
+        font-family: sans-serif;
+    }
+
+    body {
+        /*La plupart des navigateurs appliquent des marges par défaut au <body> et au <html>. Ici, c'est corrigé.*/
+        margin: 0;
+        width: 100%;
+    }
+
+    div {
+        width: 50%;
+        background-color: lightskyblue;
+    }
+
+    div > div { /* div enfant direct d'un div */
+        width: 50%;
+        background-color: lightseagreen;
+    }
+    </style>
+</head>
+<body>
+    <h2>Des pourcentages</h2>
+    Jouer avec la largeur de la fenêtre:
+    <ul>
+        <li>
+            Si le body a une largeur définie à 100% et qu’un enfant direct de body a une largeur de 50%, la taille du
+            div sera toujours égale à 50% de celle du body.
+        </li>
+        <li>
+            Si ensuite, un div à l’intérieur du div a une largeur définie à 50%, celui-ci aura une largeur de 50%
+            par rapport au div et 25% par rapport au body.
+        </li>
+    </ul>
+    <div>
+        <div>Un premier paragraphe</div>
+        <div>Un deuxième paragraphe</div>
+        <div>Un troisième paragraphe</div>
+    </div>
+</body>
+</html>

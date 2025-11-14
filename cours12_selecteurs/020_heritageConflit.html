@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Heritage conflit</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /*
+        En CSS, s’il y a un conflit,
+        c’est-à-dire si un élément reçoit plusieurs fois la même propriété avec des valeurs différentes,
+        le style prioritaire sera le plus proche de l’élément.
+        */
+        body {
+            font-family: Arial, sans-serif;
+            color: purple;
+        }
+        p {
+            color: blue;
+        }
+        strong {
+            color: red;
+        }
+        #prioritaire {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notion d’héritage</h1>
+    <p>Tous les éléments à l’intérieur de body sont des enfants de cet élément (body).</p>
+    <p>Si on applique un style à l’élément body, <strong>les enfants en hériteront automatiquement</strong>.</p>
+    <p id="prioritaire">Le style prioritaire sera <strong>le plus proche de l’élément</strong>.</p>
+</body>
+</html>

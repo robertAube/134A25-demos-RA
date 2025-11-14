@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de ::first-line</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* first-line modifier l’apparence de la première ligne de texte d’un élément bloc */
+        /* Applicable seulement sur des éléments de type block  */
+        p::first-line {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de ::first-line</h1>
+    <p>Ceci est un exemple de texte qui est suffisamment long pour démontrer l'effet du pseudo-élément ::first-line.
+        Peut-être qu'il faudra réduire la fenêtre.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti dolores illum in laudantium libero minima minus, natus nisi non placeat, quae qui quo repellat sequi sunt tenetur vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur dolores necessitatibus pariatur quia. Aliquam aperiam consequatur debitis dignissimos dolore facere fuga hic modi nobis, perspiciatis quam quisquam sit vitae!</p>
+</body>
+</html>

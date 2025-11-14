@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de Font-Weight</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* font-weight en CSS sert à définir l’épaisseur du texte. */
+    /* Elle permet de rendre le texte plus ou moins gras, selon la valeur choisie. */
+
+    .weight-100 {
+        font-weight: 100;
+    }
+
+    .weight-200 {
+        font-weight: 200;
+    }
+
+    .weight-300 {
+        font-weight: 300;
+    }
+
+    .weight-400 {
+        font-weight: 400; /* normal */
+    }
+
+    .weight-500 {
+        font-weight: 500;
+    }
+
+    .weight-600 {
+        font-weight: 600;
+    }
+
+    .weight-700 {
+        font-weight: 700; /* gras */
+    }
+
+    .weight-800 {
+        font-weight: 800;
+    }
+
+    .weight-900 {
+        font-weight: 900;
+    }
+
+    .normal {
+        font-weight: normal; /* 400 */
+    }
+
+    .bold {
+        font-weight: bold; /* 700 */
+    }
+
+    .encadrer {
+        border: 2px solid black; /* encadré par une ligne de 2px noir */
+    }
+
+    #divPlusOuMoinsGras {
+        font-weight: 700;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemple de Font-Weight</h1>
+    <h2>Grossitude sur une échel de 100 à 900 : </h2>
+
+    <!-- div est un conteneur générique utilisé pour regrouper des éléments et structurer une page web. -->
+    <div class="encadrer">
+        <p class="weight-100">Ceci est un texte avec le poids de police 100. (très fin).</p>
+        <p class="weight-200">Ceci est un texte avec le poids de police 200. (fin).</p>
+        <p class="weight-300">Ceci est un texte avec le poids de police 300. (semi-fin).</p>
+        <p class="weight-400">Ceci est un texte avec le poids de police 400. (normal).</p>
+        <p class="weight-500">Ceci est un texte avec le poids de police 500. (moyen)</p>
+        <p class="weight-600">Ceci est un texte avec le poids de police 600. (semi-gras)</p>
+        <p class="weight-700">Ceci est un texte avec le poids de police 700. (gras).</p>
+        <p class="weight-800">Ceci est un texte avec le poids de police 800. (très épais)</p>
+        <p class="weight-900">Ceci est un texte avec le poids de police 900. (ultra gras).</p>
+    </div>
+
+    <h2>Grossitude : normal et bold : </h2>
+    <div class="encadrer">
+        <p class="normal">Ceci est un texte avec le poids de police normal (400 - par défaut).</p>
+        <p class="bold">Ceci est un texte avec le poids de police bold. (700 - plus épais).</p>
+    </div>
+
+    <h2>Grossitude : Relatif à ce qui est courant</h2>
+    <div id="divPlusOuMoinsGras" class="encadrer">
+        texte de 700.. "la grossitude courante"
+        <p style="font-weight: lighter;">Texte moins gras</p>
+        <p style="font-weight: bolder;">Texte plus gras</p>
+    </div>
+
+</body>
+</html>

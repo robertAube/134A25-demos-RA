@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>div:has(> div)</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+
+    /* has: sélectionner un élément parent en fonction de ses enfants ou descendants */
+    div:has(h2) { /* div:has(h2) sélectionne les éléments div qui contiennent au moins un enfant direct h2. */
+        border: 2px solid blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>div:has(> div)</h1>
+    <div>
+        <h2>sous-titre</h2>
+        <p>Un premier paragraphe dans un div</p>
+        <div>
+            <p>Un 2ième paragraphe dans un sous div</p>
+            <div>
+                <p>Un 3ième paragraphe dans un sous sous div</p>
+            </div>
+        </div>
+    </div>
+    <h1>Titre h1</h1>
+    <div>
+        <p>un 4ième paragraphe</p>
+    </div>
+</body>
+</html>

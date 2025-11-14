@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Éléments block vs inline</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /*
+        Éléments Block
+        Occupent toute la largeur disponible : Un élément block s’étend sur toute la largeur de son conteneur parent.
+        Commencent sur une nouvelle ligne : Chaque élément block commence sur une nouvelle ligne, ce qui signifie qu’il force un retour à la ligne avant et après lui.
+        Peuvent contenir d’autres éléments block et inline.
+        Par exemple, les balises <div>, <h1>, <p>, <ol>, <ul> <li> sont de type block.
+        */
+        p, h1, div, li { /* je veux que p, h1, div soit bleu pour spécifier qu'ils sont block */
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+
+
+        /*
+        Éléments Inline
+        Occupent seulement la largeur nécessaire : Un élément inline occupe seulement l’espace nécessaire pour son contenu.
+        Ne commencent pas sur une nouvelle ligne : Les éléments inline ne forcent pas de retour à la ligne, ils s’affichent sur la même ligne que les éléments précédents et suivants.
+        Ne peuvent contenir que d’autres éléments inline.
+        Par exemple, les balises <span>, <a>, <strong>, <em>, <img>.
+         */
+        strong, em, a { /* ici on veut mettre les éléments inline en vert */
+            background-color: lightgreen;
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Éléments block & inline</h1>
+    <p>L'élément p est un élément de type block</p>
+    <p>L'élément <strong>strong</strong> et <em>em</em> sont de type inline</p>
+
+    <p>Voivi des sites intéressants :</p>
+    <ul>
+        <li>Meilleur cégep à Québec : <a href="https://www.cegeplimoilou.ca/">Cégep limoilou</a></li>
+        <li>Élement block et inline en détail : <a href="https://www.w3schools.com/html/html_blocks.asp">w3schools</a></li>
+     </ul>
+</body>
+</html>

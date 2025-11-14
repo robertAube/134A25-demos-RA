@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+h1, h2 {
+    font-family: monospace;
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.code {
+    font-family: monospace;
+}
+
+.code > p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.container {
+    /* conteneur flexible : distribue l’espace entre les éléments enfants et de les aligner facilement, que ce soit horizontalement ou verticalement.*/
+    display: flex;
+    /*width: fit-content; !* Définit la largeur de l'élément en utilisant l'espace disponible. *!*/
+    border: 2px solid dimgray;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.item {
+    background-color: cornflowerblue;
+    color: yellow;
+
+    width: fit-content;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* couleurs des boîtes */
+.item:nth-child(1) { /* cibler les éléments enfants selon leur position dans leur parent. */
+    background-color: yellowgreen;
+    color: white;
+}
+
+.item:nth-child(2) {
+    background-color: cornflowerblue;
+    color: yellow;
+}
+
+.item:nth-child(3) {
+    background-color: #2F4558;
+    color: #55D5E0;
+}
+
+.item:nth-child(4) {
+    background-color: #93441A;
+    color: #FBFBFB;
+}
+
+.item:nth-child(5) {
+    background-color: #FF5EFA;
+    color: white;
+}
+
+.txtSurligner {
+    width: fit-content; /* Définit la largeur d'un élément pour l'ajuster au contenu. */
+
+    /*pour centrer*/
+    margin-left: auto;
+    margin-right: auto;
+
+    color: yellow;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #c31515;
+}

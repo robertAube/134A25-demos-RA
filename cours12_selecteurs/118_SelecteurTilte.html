@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Tilte(~)</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    /* le sélecteur ~ est appelé sélecteur général de frère (general sibling combinator). */
+    /* Il permet de cibler tous les éléments frères qui suivent un élément */
+    h2 ~ p {
+        color: red;
+    }
+
+    .section ~ p {
+        background-color: blue;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Tilte(~)</h1>
+    <div>
+        <h2>Titre</h2>
+        <p>Paragraphe 1</p>
+        <div>
+            <h2>h2</h2>
+            <p>Paragraphe 1</p>
+            <p>Paragraphe 2</p>
+        </div>
+        <p>Paragraphe 2</p>
+    </div>
+
+    <p>Paragraphe 3</p>
+    <div class="section">Section 1</div>
+    <p>Paragraphe 4</p>
+    <div>
+        <p>Paragraphe 5</p>
+    </div>
+    <p>Paragraphe 6</p>
+
+</body>
+</html>

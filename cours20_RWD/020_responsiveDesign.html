@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>20 - Responsive design</title>
+    <!-- largeur d'écran -->
+    <script src="_script/getLargeurScreen.js"></script>
+    <link rel="stylesheet" href="_css/010_affichageLargeurEcran.css">
+
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    body {
+        font-family: sans-serif;
+    }
+
+    /* requêtes multimédias (media query) :
+    /* Permet d’appliquer des styles CSS en fonction du type de support d’un appareil
+    ou d’autres fonctionnalités ou caractéristiques telles que la résolution ou l’orientation de l’écran,
+    les rapports hauteur/largeur, la largeur ou la hauteur de la fenêtre d’affichage du navigateur,
+     les préférences de l’utilisateur.
+     */
+    @media screen and (max-width: 680px) {
+        /* si la largeur est inférieure ou égale à 680px */
+        body {
+            background-color: red;
+        }
+    }
+
+    @media screen and (min-width: 681px) and (max-width: 1279px) {
+        /* si la largeur est entre 681px et 1279px inclusivement*/
+        body {
+            background-color: yellow;
+        }
+    }
+
+    @media screen and (min-width: 1279px) {
+        /* si la largeur est supérieure ou égale à 1280px */
+        body {
+            background-color: lightgreen;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Responsive design</h1>
+    <p>Jouer avec la largeur de la fenêtre!</p>
+    <div id="affichageLargeurEcran"></div>
+</body>
+</html>

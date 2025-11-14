@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Forcer règle</title>
+
+    <!-- considérer ici que vous avez 3 css différents dont 2 dictent la couleur d'un paragraphe p -->
+
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    /*
+    On peut modifier la priorité en ajoutant la mention !important
+    à la fin d’une déclaration CSS qu’on veut imposer.
+    */
+    p {
+        /* !important : Cette règle sera appliquée */
+        color: lime !important;
+        /*color: lime;*/
+    }
+    </style>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    p { /* aller voir !important sur le style précédent */
+        color: blue;
+    }
+    </style>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    body {
+        font-family: Arial, sans-serif;
+        color: indianred;
+    }
+
+    strong {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Notion d’héritage</h1>
+    <p><strong>!important</strong> est une déclaration spéciale utilisée pour forcer une règle à s’appliquer, même si d’autres
+        règles ont une spécificité plus élevée.</p>
+    <h2>Pourquoi utiliser !important ?</h2>
+    <ul>
+        <li>Prioriser une règle dans des cas où plusieurs styles entrent en conflit.</li>
+        <li>Pour contourner des styles hérités ou imposés par des bibliothèques externes (comme Bootstrap).</li>
+        <li>Pour corriger rapidement un style sans modifier toute la cascade CSS.</li>
+    </ul>
+
+    <h2>À éviter si possible</h2>
+    Bien que pratique, <b>!important</b> peut rendre le CSS :
+    <ul>
+
+        <li>difficile à maintenir,</li>
+        <li>moins prévisible,</li>
+        <li>et plus compliqué à déboguer.</li>
+    </ul>
+</body>
+</html>

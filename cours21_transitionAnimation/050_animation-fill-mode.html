@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>050_animation-fill-mode</title>
+    <link rel="stylesheet" href="css/general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .div0, .div1, .div2, .div3 {
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 2s; /* temps avant de partir l'animation */
+    }
+
+    .div1 { /* détermine comment les styles d’une animation sont appliqués à un élément avant et après son exécution */
+        animation-fill-mode: forwards; /* L’élément garde le style final de l’animation.n */
+    }
+
+    .div2 {
+        animation-fill-mode: backwards; /* définit par la première image clé (keyframe) de l’animation après la fin de l’animation */
+    }
+
+    .div3 {
+        animation-fill-mode: both; /* Applique les styles de la première image clé pendant la période de délai et les styles de la dernière image clé après la fin de l’animation. */
+    }
+
+    @keyframes example {
+        from {
+            left: 0px; /* laisse à gauche 0 pixel */
+            background-color: orange;
+        }
+        to {
+            left: 200px; /* laisse à gauche 0 pixel */
+            background-color: deepskyblue;
+        }
+    }
+    </style>
+<!--    <link rel="stylesheet" href="css/code.css">-->
+</head>
+<body>
+    <h2>animation-fill-mode</h2>
+
+    <pre>
+        <code>
+@keyframes example {
+    from {
+        left: 0px; /* laisse à gauche 0 pixel */
+        background-color: orange;
+    }
+    to {
+        left: 200px; /* laisse à gauche 0 pixel */
+        background-color: deepskyblue;
+    }
+}
+        </code>
+    </pre>
+
+    <h3>Sans animation-fill-mode</h3>
+    <p></p>
+    <div class="container">
+        <div class="div0">Sans animation-fill-mode</div>
+    </div>
+
+    <h3>animation-fill-mode: forwards;</h3>
+    <p>L’élément garde le style final de l’animation.</p>
+    <div class="container">
+    <div class="div1">forwards</div>
+    </div>
+
+    <h3>animation-fill-mode: backwards;</h3>
+    <p>
+        L’élément adopte le style initial de l’animation pendant le délai.
+        <br>(Donc texte orange, durant le délai avant le départ de l'animation)
+    </p>
+    <div class="container">
+        <div class="div2">backwards</div>
+    </div>
+
+    <h3>animation-fill-mode: both;</h3>
+    <p>Combine forwards et backwards.</p>
+    <div class="container">
+        <div class="div3">both</div>
+    </div>
+</body>
+</html>

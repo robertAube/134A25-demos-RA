@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de text-decoration</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        p { /* décaller les paragraphe à droite */
+            margin-left: 20px;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .line-through {
+            text-decoration: line-through;
+        }
+        .custom {
+            text-decoration-line: underline; /* souligné */
+            text-decoration-color: red; /* rouge */
+            text-decoration-style: wavy; /* vague */
+        }
+        a {
+            text-decoration: underline;
+            color: blue;
+        }
+        a:hover { /* :hover quand on survole le lien (a) avec la souris prendre ce style */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemples de <b>text-decoration</b></h1>
+    <h3>text-decoration: underline;</h3>
+    <p class="underline">Ceci est un texte souligné.</p>
+    <h3>text-decoration: overline;</h3>
+    <p class="overline">Ceci est un texte avec une ligne au-dessus.</p>
+    <h3>text-decoration: line-through;</h3>
+    <p class="line-through">Ceci est un texte barré.</p>
+    <h3>text-decoration custum</h3>
+    <p class="custom">Ceci est un texte souligné en rouge avec une ligne ondulée.</p>
+    <h3>text-decoration: none;</h3>
+    <p>Passez la souris par dessus ce <b>lien</b> pour voir l'effet!</p>
+    <p><a href="https://cegeplimoilou.ca">Cegep Limoilou</a></p>
+</body>
+</html>

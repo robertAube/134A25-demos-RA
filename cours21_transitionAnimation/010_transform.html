@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>010_transform</title>
+    <link rel="stylesheet" href="css/general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    /* rotate fait pivoter un élément autour d’un point central (généralement son centre). */
+    .rotate {
+        transform: rotate(-15deg); /* fait pivoter l’élément de 15 degrés dans le sens des aiguilles d’une montre */
+    }
+
+    .rotateX {
+        transform: rotateX(50deg); /* fait pivoter l’élément dans l'axe des X de 50 degrés */
+    }
+
+    .rotateY {
+        transform: rotateY(50deg); /* fait pivoter l’élément dans l'axe des Y de 50 degrés */
+    }
+
+    .scale {
+        transform: scale(1.5); /* agrandit l’élément à 130% de sa taille d’origine: 1 conserve la même échelle */
+    }
+
+    .translate {
+        transform: translate(50px, 20px); /*  Déplace l’élément de 50 pixels vers la droite et de 20 pixels vers le bas */
+    }
+
+    /* skew incline un élément le long des axes X et Y, créant un effet de distorsion */
+    .skewX0 {
+        transform: skewX(0deg); /* incline l’élément de 0 degrés uniquement sur l’axe X */
+    }
+
+    .skewX20 {
+        transform: skewX(20deg); /* incline l’élément de 20 degrés uniquement sur l’axe X */
+    }
+
+    .skewY {
+        transform: skewY(30deg); /* incline l’élément de 30 degrés uniquement sur l’axe Y */
+    }
+
+    .skew {
+        transform: skew(20deg, 30deg); /* incline l’élément de 20 degrés sur l’axe X et de 30 degrés sur l’axe Y. */
+    }
+
+    .combine:hover {
+        transform: rotate(-15deg) scale(.7); /* pivote l'élément de -15 degrés dans le sens des aiguilles d'une montre et rétrécis l'échel de 30% */
+    }
+    </style>
+</head>
+<body>
+    <h3>Sans transform</h3>
+    <div class="container">
+        <div>test du transform</div>
+    </div>
+
+    <h3> transform: rotate(-15deg);</h3>
+    <div class="container">
+        <div class="rotate">test du transform</div>
+    </div>
+
+    <h3>transform: rotateX(50deg);</h3>
+    <div class="container">
+        <div class="rotateX">test du transform</div>
+    </div>
+
+    <h3>transform: rotateY(50deg);</h3>
+    <div class="container">
+        <div class="rotateY">test du transform</div>
+    </div>
+
+    <h3>transform: scale(1.5);</h3>
+    <div class="container">
+        <div class="scale">test du transform</div>
+    </div>
+
+    <h3>transform: translate(50px, 20px);</h3>
+    <div class="container">
+        <div class="translate">test du transform</div>
+    </div>
+
+    <h3>transform: skewX(0deg);</h3>
+    <div class="container">
+        <div class="skewX0">test du transform</div>
+    </div>
+
+    <h3>transform: skewX(20deg);</h3>
+    <div class="container">
+        <div class="skewX20">transform: skewX(20deg);</div>
+    </div>
+
+    <h3>transform: skewY(30deg);</h3>
+    <div class="container">
+        <div class="skewY">transform: skewY(30deg);</div>
+    </div>
+
+    <h3>transform: skew(20deg, 30deg);</h3>
+    <div class="container">
+        <div class="skew">transform: skew(20deg, 30deg);</div>
+    </div>
+
+    <h3>transform: rotate(-15deg) scale(.7); /* sur hover */</h3>
+    <div class="container">
+        <div class="combine">transform: rotate(-15deg) scale(.7);</div>
+    </div>
+</body>
+</html>

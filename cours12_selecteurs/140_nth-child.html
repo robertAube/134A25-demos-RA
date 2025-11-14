@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de :nth-child</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        li:nth-child(even) { /* Chaque élément paire d'un même parent */
+            color: green;
+        }
+
+        li:nth-child(4) {
+            color: orange; /* Chaque troisième élément, en commençant par le premier */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de :nth-child</h1>
+    <ul>
+        <li>Élément 1 niveau 1</li>
+        <li>Élément 2 niveau 1</li>
+        <li>Élément 3 niveau 1</li>
+        <ul> <!-- Élément 4 de niveau 1  -->
+            <li>Élément 1 niveau 2</li>
+            <li>Élément 2 niveau 2</li>
+            <li>Élément 3 niveau 2</li>
+            <li>Élément 4 niveau 2</li>
+        </ul>
+        <li>Élément 5 niveau 1</li>
+        <li>Élément 6 niveau 1</li>
+        <li>Élément 7 niveau 1</li>
+        <li>Élément 8 niveau 1</li>
+        <li>Élément 9 niveau 1</li>
+    </ul>
+</body>
+</html>

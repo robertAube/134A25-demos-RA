@@ -1,0 +1,57 @@
+.boite {
+    padding: 5px; /* Rembourrage: L'espace entre le contenu et la bordure. */
+    margin: 5px; /* Marge: L'espace externe autour de l'élément. */
+    background-color: dodgerblue; /* couleur de remplissage */
+}
+
+#boitePrincipale {
+    background-color: lightblue; /* couleur de remplissage */
+    /*width: 400px;*/
+    width: 75%; /* 75% de la largeur de la fenêtre */
+    border: 5px solid firebrick;
+}
+
+#boite1 {
+    width: 50%; /* prendre 50% de la largeur  */
+    border-width: 4px;
+    border-style: dashed;
+    border-color: black;
+}
+
+#boite2 {
+    border: 5px solid yellowgreen; /* Bordure: La bordure entourant le padding et le contenu */
+}
+
+#boite3 {
+    width: 75%;
+    border: 4px dotted black;
+}
+
+#boite4 {
+    border: 10px double yellow; /* Bordure: width style color (en une ligne)*/
+}
+
+#boite5 {
+    border-width: 16px;
+    width: 50%; /* prendre 50% de la largeur */
+    border-style: inset; /* inset donne l’impression que l’élément est enfoncé */
+    /*border-style: outset; !* outset donne l’impression que l’élément est surélevé *!*/
+    border-color: gray;
+}
+
+#boite6 {
+    border-top: 8px solid red;
+    border-left: 8px solid red;
+    border-bottom: 4px solid orange;
+    border-right: 4px solid orange;
+}
+
+#boite7 {
+    border-width: 16px;
+    width: 50%; /* prendre 50% de la largeur */
+    border-style: solid; /* inset donne l’impression que l’élément est enfoncé */
+    border-radius: 14px;
+    border-color: gray;
+}
+
+

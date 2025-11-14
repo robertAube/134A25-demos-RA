@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>display: block/inline</title>
+    <link rel="stylesheet" href="000_general.css">
+    <style>
+        p { /* p est normalement block */
+            background-color: orange;
+        }
+        span { /* rappel : span est in-line */
+            background-color: lightblue;
+        }
+        /* display peut prendre les valeurs suivantes : inline, block, inline-block, none */
+
+        .block { /* L’élément occupe toute la largeur disponible et commence sur une nouvelle ligne. */
+            display: block;
+        }
+
+        .inline { /* L’élément occupe la largeur de l'élément seulement. */
+            display: inline;
+        }
+
+        .hidden { /* L’élément n’est pas affiché du tout (il ne prend pas de place dans le flux du document) */
+            display: none;
+        }
+
+        /* L’élément s’affiche en ligne (comme inline), donc il peut être placé à côté d’autres éléments sur la même ligne. */
+        /* Mais il se comporte comme un bloc, ce qui signifie qu'on peut lui appliquer des propriétés de mise en forme comme width, height, margin, padding, etc. */
+        .inline-block {
+            display: inline-block;
+            /*width: 100%;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>display: block/inline</h1>
+    <p>Sans display spécial</p>
+    <p class="block">paragraphe display: block;</p>
+    <p class="inline">paragraphe display: inline;</p>
+    <p>
+        <!--        rappel : span est in-line-->
+        <span>inline : </span>L’élément occupe seulement la largeur nécessaire et ne commence pas sur une nouvelle
+        ligne.
+    </p>
+    <p><span class="block">un span devenu block : </span>L’élément occupe toute la largeur disponible.</p>
+    <p class="hidden">Je suis présent, mais je ne suis pas affiché!</p>
+    <p class="inline-block">Ceci est un élément inline-block</p>
+    <p class="inline-block">Ceci est un élément inline-block</p>
+    <p class="inline-block">Ceci est un élément inline-block</p>
+    <p class="inline-block">Ceci est un élément inline-block</p>
+</body>

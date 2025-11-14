@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>30 - Responsive design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    name="viewport" : Indique que cette balise meta concerne les paramètres de la fenêtre d’affichage (viewport).-->
+    <!--    content="width=device-width" : Définit la largeur de la fenêtre d’affichage à la largeur de l’appareil.
+                                           La page s’adaptera à la largeur de l’écran du téléphone, de la tablette ou du navigateur.-->
+    <!--    initial-scale=1.0" : Définit le niveau de zoom initial lorsque la page est chargée.
+                                 Un initial-scale de 1.0 signifie que la page sera affichée à 100% de sa taille, sans zoom.-->
+    <!-- Sur un ordinateur, le navigateur connaît déjà la largeur réelle de la fenêtre, donc cette balise n’a pas d’impact visible.
+         Sur mobile, ce sera indispensable pour que les media queries fonctionnent comme prévu.
+    -->
+
+    <!-- Pas un développement mobile first: par défaut ce n'est pas pour un mobile... -->
+    <link rel="stylesheet" href="_css/030_defaut.css">
+    <link rel="stylesheet" href="_css/030_width780etMoins.css">
+
+    <!-- largeur d'écran -->
+    <script src="_script/getLargeurScreen.js"></script>
+    <link rel="stylesheet" href="_css/010_affichageLargeurEcran.css">
+</head>
+<body>
+    <h1>Responsive design</h1>
+    <div class="container">
+        <div class="div1">
+            <p>Je suis un paragraphe appartenant au premier div</p>
+        </div>
+        <div class="div2">
+            <p>Je suis un paragraphe appartenant au deuxième div</p>
+        </div>
+        <div class="div3">
+            <p>Je suis un paragraphe appartenant au troisième div</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Je suis le pied de page</p>
+    </div>
+    <div id="affichageLargeurEcran"></div>
+</body>
+</html>

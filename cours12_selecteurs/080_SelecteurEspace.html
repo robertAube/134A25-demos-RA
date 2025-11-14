@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Sélecteur espace</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+
+        /* sel1 sel2 { } */
+        /* Appliquer un style sur tous les éléments de type sel2 qui sont enfants (même tous ses déscendants) d’un élément de type sel1 */
+
+            .c1 p { /* ici si p est dans un div de classe c1 (peu importe le niveau), on applique le style */
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sélecteur espace</h1>
+    <div class="c1">
+        <p>Un paragraphe dans un div c1</p>
+    </div>
+    <div class="c1">
+        <p>Un paragraphe encore dans un div c1</p>
+        <div>
+            <p>Un paragraphe dans un div c1 sous 1 div qui n'est pas c1</p>
+            <div>
+                <p>Un paragraphe dans un div c1 sous 2 div qui n'est pas c1</p>
+            </div>
+        </div>
+        <p>Un paragraphe encore dans un div c1</p>
+    </div>
+    <p>Ce paragraphe est hors d'un div</p>
+    <div>
+        <p>Un paragraphe qui est dans un div qui n'est pas de classe c1</p>
+    </div>
+    <p>Ce paragraphe est hors d'un div</p>
+</body>
+</html>

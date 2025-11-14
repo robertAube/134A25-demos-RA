@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-direction</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+
+    /* flex-direction définit
+    la direction dans laquelle les éléments flexibles sont placés dans un conteneur flexible. */
+
+    .row {
+        flex-direction: row; /* disposés en ligne horizontale (de gauche à droite). */
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse; /* disposés horizontalement de droite à gauche */
+    }
+
+    .column {
+        flex-direction: column; /* disposés en colonne verticale (de haut en bas) */
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse; /* disposés verticalement, de bas en haut */
+    }
+    </style>
+
+</head>
+<body>
+    <h1>flex-direction</h1>
+    <p>Définit la direction dans laquelle les éléments flexibles sont placés dans un conteneur flexible.</p>
+    <h2>Par défaut c'est flex-direction est à row;</h2>
+    Les éléments sont disposés en ligne horizontale (de gauche à droite).
+    <div class="container">
+        <div class="item">Élément 1</div>
+        <div class="item">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <h2>flex-direction: row;</h2>
+    Les éléments sont disposés en ligne horizontale (de gauche à droite).
+    <div class="container row">
+        <div class="item">Élément 1</div>
+        <div class="item">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <h2>flex-direction: row-reverse;</h2>
+    Les éléments sont disposés horizontalement de droite à gauche.
+    <div class="container row-reverse">
+        <div class="item">Élément 1</div>
+        <div class="item">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <h2>flex-direction: column;</h2>
+    Les éléments sont disposés en colonne verticale (de haut en bas).
+    <div class="container column">
+        <div class="item">Élément 1</div>
+        <div class="item">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+    <h2>flex-direction: column-reverse;</h2>
+    Les éléments sont disposés verticalement, de bas en haut.
+    <div class="container column-reverse">
+        <div class="item">Élément 1</div>
+        <div class="item">Élément 2</div>
+        <div class="item">Élément 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>020_transitions</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+
+    div {
+        text-align: justify;
+
+        padding: 10px;
+
+        height: fit-content;
+
+        border: 5px solid purple;
+
+        width: 200px;
+        background-color: lightblue;
+    }
+    .div1 {
+        /* transition: si une propriété change (par exemple, la couleur, la taille, la position, etc.). Ce sera plus fluides et agréables à l’œil.*/
+        transition: width 2s, background-color 5s;
+        /* sur transition, change width en 2 secondes et background-color 5s */
+    }
+
+    /* hover spécifie le style d’un élément lorsqu’un utilisateur le survole avec la souris */
+    .div1:hover {
+        width: 400px;
+        background-color: orangered;
+    }
+
+    .div2 {
+        transition: background-color 10s, transform 1s;
+    }
+    .div2:hover {
+        transform: rotate(180deg);
+        background-color: lightgreen;
+    }
+
+    .div3 {
+        transition: background-color 10s, transform 2s, ease-in-out 1s;
+        /* temps pour faire le transform, plus let au début et à la fin de l'animation, 1s avant de partir l'animation */
+    }
+    .div3:hover {
+        transform: rotateY(180deg) ;
+        background-color: deepskyblue;
+    }
+    </style>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    <h1>Transitions</h1>
+    <h2>transition: width 2s, background-color 5s;</h2>
+    <p>Sur transition, change width en 2 secondes et background-color 5s</p>
+    <div class="div1">
+        <p>Passer la souris sur moi!</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut deleniti, dolore dolorum eum harum illum
+            inventore iure maiores minus necessitatibus, placeat quaerat repellendus saepe sed similique temporibus
+            tenetur veniam.
+        </p>
+    </div>
+
+    <h2>transition: background-color 10s, transform 1s;</h2>
+    <p>transition: background-color 10s, transform 1s;</p>
+    <div class="div2">
+        <p>Passer la souris sur moi!</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut deleniti, dolore dolorum eum harum illum
+            inventore iure maiores minus necessitatibus, placeat quaerat repellendus saepe sed similique temporibus
+            tenetur veniam.
+        </p>
+    </div>
+
+    <h2>transition: background-color 5s, transform 3s ease-in-out 1s;</h2>
+    <p>Temps pour faire le transform, plus lent au début et à la fin de l'animation, 1s avant de partir l'animation</p>
+    <div class="div3">
+        <p>Passer la souris sur moi!</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut deleniti, dolore dolorum eum harum illum
+            inventore iure maiores minus necessitatibus, placeat quaerat repellendus saepe sed similique temporibus
+            tenetur veniam.
+        </p>
+    </div>
+</body>
+</html>

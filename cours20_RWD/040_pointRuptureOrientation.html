@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>40 - Point de rupture basé sur l'orientation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        body {
+            background-color: orange;
+            font-family: sans-serif;
+        }
+
+        @media screen and (orientation: landscape) { /* si l’orientation de l’écran passe en paysage */
+            body {
+                background-color: lightskyblue;
+            }
+        }
+    </style>
+    <script src="_script/getLargeurScreen.js"></script>
+    <link rel="stylesheet" href="_css/010_affichageLargeurEcran.css">
+</head>
+<body>
+    <h2>Point de rupture basé sur l'orientation</h2>
+    <p>
+        Pour cibler l’orientation avec des <strong>media queries</strong> en CSS, utiliser la propriété orientation.
+    </p>
+    <p>
+        Ici le fond de la page passe d'orange à lightskyblue lorsque l’orientation de l’écran passe en paysage.
+    </p>
+    <div id="affichageLargeurEcran"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Les ombres des cadres</title>
+    <link rel="stylesheet" href="000_general.css">
+    <link rel="stylesheet" href="060_box-shadow.css">
+
+</head>
+<body>
+    <div id="mainDiv">
+        <h1>Les ombres des cadres</h1>
+        <div class="OmbreSimple boite">Ombre simple
+            <div class="code">
+                <p>box-shadow: 10px 10px 5px grey;</p>
+            </div>
+        </div>
+        <div class="OmbreAvecFlouEtEtalement boite">Ombre avec flou et étalement
+            <div class="code">
+                <p> box-shadow: 15px 15px 15px rgb(0, 255, 0); /* rgba(rouge, vert, bleu) */</p>
+            </div>
+        </div>
+        <div class="OmbreAvecFlouEtEtalementTransparence boite">Ombre avec flou, étalement et tranparence de l'étalement
+            <div class="code">
+                box-shadow: 15px 15px 15px rgba(0, 255, 0, 0.5)
+                <br>/* La quatrième valeur est 0.5, ce qui représente l’opacité de la couleur. */
+                <br>/* Une valeur de 0.9 signifie que la couleur est très opaque (90% opaque et 10% transparente). */
+            </div>
+        </div>
+        <div class="OmbreInterieure boite">Ombre intérieure
+            <div class="code">
+                <p>box-shadow: inset 0px 0px 10px black;
+                    <br>/* inset – Change l'ombre d'une ombre de boîte extérieure en ombre de boîte intérieure (comme si le contenu était enfoncé dans la boîte). */</p>
+            </div>
+        </div>
+        <div class="OmbresMultiples boite">Ombres multiples
+            <div class="code">
+                <p>box-shadow: 3px 3px 5px red, -3px -3px 5px blue;</p>
+            </div>
+        </div>
+    </div>
+</body>

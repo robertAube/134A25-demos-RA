@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Avec Flexbox</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    .container {
+        border: 2px solid black;
+        /* Maintenant que le conteneur est flex, ses éléments sont flexibles et on pourra utiliser
+        les différentes propriétés appartenant au modèle Flexbox pour les organiser de façon précise et puissante.
+        Voir DemoEtu-A24: https://www.w3schools.com/css/css3_flexbox.asp
+         */
+        display: flex;
+    }
+
+    .container > div {  /* tous les div enfant direct de c1 */
+        padding: 20px;
+    }
+
+    .e1 {
+        background-color: yellowgreen;
+    }
+
+    .e2 {
+        background-color: cornflowerblue;
+    }
+
+    .e3 {
+        background-color: peru;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="e1">Élément 1 : Avec flex</div>
+        <div class="e2">Élément 2 : Avec flex</div>
+        <div class="e3">Élément 3 : Avec flex</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Propriété overflow</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        p { /* par défaut overflow la valeur visible. Le contenu débordant n’est pas rogné et peut dépasser de l’élément.*/
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+            margin: 40px;
+        }
+
+        .visible { /* L’élément occupe toute la largeur disponible et commence sur une nouvelle ligne. */
+            overflow: visible;
+        }
+
+        .hidden { /* L’élément occupe seulement la largeur nécessaire et ne commence pas sur une nouvelle ligne */
+            overflow: hidden;
+        }
+
+        .scroll { /* Des barres de défilement sont ajoutées pour permettre de voir le contenu débordant. */
+            overflow: scroll;
+            height: 90px;
+        }
+
+        .auto { /* Des barres de défilement sont ajoutées uniquement si nécessaire. */
+            overflow: auto;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriété overflow</h1>
+    La propriété CSS overflow contrôle ce qui se passe quand le contenu d’un élément dépasse la taille définie pour cet élément.<br>
+    (par exemple, une div trop petite pour contenir tout le texte ou les images qu’elle contient).
+
+    <p>la valeur par défaut d'<strong>overflow</strong> est <strong>visible</strong><br>
+        Le contenu débordant n’est pas rogné et peut dépasser de l’élément.</p>
+    <p class="visible"><strong>overflow: visible;</strong><br>L’élément occupe seulement la largeur nécessaire et ne
+        commence pas sur une nouvelle ligne.</p>
+    <p class="hidden"><strong>overflow: hidden;</strong><br>Le contenu débordant est rogné et n’est pas visible.</p>
+    <p class="scroll"><strong>overflow: scroll;</strong><br>Des barres de défilement sont ajoutées pour permettre de
+        voir le contenu débordant.</p>
+    <p class="auto"><strong>overflow: auto;</strong><br>Des barres de défilement sont ajoutées uniquement si nécessaire.</p>
+    <p class="auto"><strong>overflow: auto;</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque ipsam, maiores molestiae placeat quas repellat temporibus. Distinctio dolore dolores enim eveniet facere id, illo libero nesciunt officiis praesentium quidem, reiciendis reprehenderit sit vitae voluptas! Atque blanditiis commodi consequatur cum cumque debitis dicta dolorem doloremque doloribus ea eaque earum eius eligendi exercitationem facilis harum id illum laboriosam laborum maiores molestias mollitia nemo quis quisquam, reprehenderit sequi sint. Architecto dolore ea eligendi error nostrum. Ab blanditiis commodi cum cupiditate dicta ducimus earum eius eos esse facilis, in modi mollitia optio perspiciatis praesentium provident qui quos, rem, repudiandae ut voluptates voluptatibus voluptatum?.</p>
+
+</body>

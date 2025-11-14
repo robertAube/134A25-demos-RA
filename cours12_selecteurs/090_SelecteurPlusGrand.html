@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecteur ></title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        /* sel1 > sel2 { } */
+        /* Appliquer un style sur tous les éléments de type sel2 qui sont enfants directs d’un élément de type sel1 */
+        .c1 > p { /* ici si p est enfant direct de class c1, on applique le style */
+            color: orange;
+        }
+        .c1 > div > p { /* ici si p est enfant direct de class c1 et un autre div, on applique le style */
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecteur ></h1>
+    <div class="c1">
+        <p>Un premier paragraphe dans un div</p>
+        <div>
+            <p>Un 2ième paragraphe dans un sous div</p>
+            <div>
+                <p>Un 3ième paragraphe dans un sous div</p>
+            </div>
+        </div>
+        <p>Un 4ième paragraphe <strong>important</strong> dans un div</p>
+    </div>
+    <p>Ce paragraphe est hors d'un div</p>
+    <div class="c1">
+        <p>Un paragraphe encore dans un div</p>
+    </div>
+    <p>Ce paragraphe est hors d'un div</p>
+</body>
+</html>

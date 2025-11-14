@@ -1,0 +1,22 @@
+.div1 /* Un bloc vert */
+{
+    background-color: lightgreen;
+}
+
+.div2 /* Un bloc gris */
+{
+    background-color: lightgrey;
+    /* place l'élément par rapport à sa position initiale. L'élément occupe la place sans superposition contrairement à position:relative */
+    margin-left: 10px; /* déplacer d’un certain nombre de pixels à partir de la marge du parent*/
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    background-color: lightblue;
+}
+
+#nomFichierCSS::after {
+    content: "060_margin.css";
+}

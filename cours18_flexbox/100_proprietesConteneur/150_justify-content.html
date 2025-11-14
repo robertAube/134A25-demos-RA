@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>justify-content</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    /* justify-content Contrôle l’alignement horizontal des éléments enfants dans le conteneur flex (si flex-direction: row, ce qui est le cas par défaut). */
+        .container {
+            /*flex-direction: column;*/
+            /*flex-direction: row-reverse;*/
+        }
+        .flex-start {
+            justify-content: flex-start; /* alignés au début du conteneur (défaut)*/
+        }
+
+        .flex-end {
+            justify-content: flex-end; /* alignés à la fin du conteneur */
+        }
+
+        .center {
+            justify-content: center; /* centrés dans le conteneur */
+        }
+
+        .space-between {
+            justify-content: space-between;
+            /* L'élément du début et de fin sont placé aux extrémités
+            puis l'espace est réparti de manière égale entre tous les éléments */
+        }
+
+        .space-around {
+            justify-content: space-around;
+            /* espace est réparti de manière égale autour des éléments. (1/2 - 1 - 1 - 1/2) */
+        }
+
+        .space-evenly {
+            justify-content: space-evenly;
+            /* espace est réparti de manière égale entre et autour des éléments. (1 - 1 - 1 - 1) */
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content</h1>
+    <p>Contrôle l’alignement horizontal des éléments enfants dans le conteneur flex (si flex-direction: row, ce qui est le cas par défaut).</p>
+    <h2>Sans justify-content</h2>
+    Valeur par défaut : flex-start
+    <div class="container" >
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>justify-content: flex-start;</h2>
+    Les éléments sont alignés au début du conteneur. (valeur par défaut)
+    <div class="container flex-start" >
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>justify-content: flex-end;</h2>
+    Les éléments sont alignés à la fin du conteneur.
+    <div class="container flex-end" >
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>justify-content: center</h2>
+    Les éléments sont centrés dans le conteneur.
+    <div class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>justify-content: space-between</h2>
+    L'élément du début et de fin sont placé aux extrémités puis l'espace est réparti de manière égale entre tous les
+    éléments. (0 - 1 - 1 - 0)
+    <div class="container space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>justify-content: space-around</h2>
+    L’espace est réparti de manière égale autour des éléments. (1/2 - 1 - 1 - 1/2)
+    <div class="container space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>justify-content: space-evenly</h2>
+    L’espace est réparti de manière égale entre et autour des éléments. (1 - 1 - 1 - 1)
+    <div class="container space-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>

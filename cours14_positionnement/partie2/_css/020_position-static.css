@@ -1,0 +1,18 @@
+.div1 /* Un bloc vert  */
+{
+    position: static; /* valeur de positionnement par défaut */
+    background-color:lightgreen;
+}
+.div2 /* Un bloc gris */
+{
+    position: static; /* valeur de positionnement par défaut */
+    background-color:lightgrey;
+}
+.div3 /* Un bloc bleu static de 800 pixels de large par 80 pixels de haut */
+{
+    position: static; /* valeur de positionnement par défaut */
+    background-color:lightblue;
+}
+#nomFichierCSS::after {
+    content: "020_position-static.css";
+}

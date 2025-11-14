@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de background-image</title>
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+        body {
+            background-image: url('../_images/c2b_625x380.jpg'); /* URL de l'image de fond */
+            background-size: auto; /* Ajuste l'image pour couvrir tout l'élément */
+            /*auto : C’est la valeur par défaut. L’image de fond conserve sa taille d’origine.*/
+            /*length : Spécifie la largeur et la hauteur de l’image de fond en utilisant des unités de longueur
+                       comme px, em, etc.
+            Par exemple, background-size: 100px 200px; définit une largeur de 100 pixels et une hauteur de 200 pixels.*/
+            /*percentage : Utiliser des pourcentages pour définir la taille de l’image de fond par rapport
+                           à la taille de l’élément.
+                           Par exemple, background-size: 50% 50%; ajuste l’image pour qu’elle occupe 50% de la largeur
+                           et 50% de la hauteur de l’élément.*/
+            /*cover : L’image de fond est redimensionnée pour couvrir entièrement l’élément, tout en maintenant
+                      ses proportions. Cela peut entraîner un recadrage de l’image.*/
+            /*contain : L’image de fond est redimensionnée pour être entièrement visible à l’intérieur de l’élément,
+                        tout en maintenant ses proportions. Cela peut entraîner des espaces vides12.*/
+
+            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+            /*repeat (valeur par défaut): l’image se répète horizontalement et verticalement*/
+            /*repeat-x: l’image se répète horizontalement seulement*/
+            /*repeat-y: l’image se répète verticalement seulement*/
+            /*no-repeat: l’image ne se répète pas*/
+
+            background-position: center; /* Centre l'image dans l'élément */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de background-image</h1>
+    <p>Ceci est un exemple de texte avec une image de fond.</p>
+</body>
+</html>

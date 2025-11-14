@@ -1,0 +1,20 @@
+/* 030_width780etMoins.css */
+/* Affichage sur mobile */
+/* appliquer des styles spécifiques aux écrans dont la largeur maximale est de 780 pixels */
+@media screen and (max-width: 780px) {
+    .container {
+        display: inline-block;
+    }
+    .div1, .div2, .div3 {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 100px;
+    }
+
+    .footer {
+        display: none;
+    }
+}

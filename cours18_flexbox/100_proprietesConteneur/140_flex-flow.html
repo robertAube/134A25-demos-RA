@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-flow</title>
+    <link rel="stylesheet" href="100_general.css">
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
+    /*
+        flex-flow en CSS est une propriété raccourcie qui combine les propriétés flex-direction et flex-wrap.
+        Voici les valeurs possibles pour flex-flow :
+
+            flex-flow: <'flex-direction'> <'flex-wrap'>
+
+            flex-direction = row | row-reverse | column | column-reverse
+            flex-wrap = nowrap | wrap | wrap-reverse
+     */
+
+    .flexFlow_row_wrap-reverse {
+        flex-flow: row wrap-reverse;
+    }
+    .flexFlow_row-reverse_wrap {
+        flex-flow: row-reverse wrap;
+    }
+
+    </style>
+
+</head>
+<body>
+    <h1>flex-flow</h1>
+    <p>flex-flow en CSS est une propriété raccourcie qui combine les propriétés flex-direction et flex-wrap.</p>
+
+    <div class="txtSurligner">Jouer avec largeur de la fenêtre pour voir l'effet.</div>
+
+    Voici les valeurs possibles pour flex-flow :
+    <div class="code">
+        <p>flex-flow: <'flex-direction'> || <'flex-wrap'></p>
+        <p>flex-direction = row | row-reverse | column | column-reverse</p>
+        <p>flex-wrap = nowrap | wrap | wrap-reverse</p>
+    </div>
+
+    <h2>flex-flow: row wrap-reverse;</h2>
+    <div class="container flexFlow_row_wrap-reverse">
+        <div class="item">1 - Lorem ipsum dolor sit amet.</div>
+        <div class="item">2 - Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item">3 - Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+    </div>
+
+    <h2>flex-flow: row-reverse wrap;</h2>
+    <div class="container flexFlow_row-reverse_wrap">
+        <div class="item">1 - Lorem ipsum dolor sit amet.</div>
+        <div class="item">2 - Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item">3 - Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+    </div></body>
+</html>
