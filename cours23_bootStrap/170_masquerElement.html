@@ -8,17 +8,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <div class="d-none d-lg-block">
+        <code>d-none d-lg-block</code><br>
+        Sur XS (<576px) : la classe ne s’applique pas (si aucune autre classe d-* n’est définie, il garde son display
+        par défaut). <br>
+        Sur SM (≥576px) et plus : display: block.
+    </div>
 
-<div class="container-fluid bg-info">
-   <div class="row">
-       <div class="col-md-6 d-none d-sm-block bg-warning">
-           Ce div n'est pas visible pour les petits écrans.
-       </div>
-       <div class="col-12 col-md-6 bg-danger">
-           Ce div est visible pour tous les écrans.
-       </div>
-   </div>
-</div>
+    <div class="container-fluid bg-info">
+        <div class="row">
+            <div class="d-none d-sm-block col-sm-6 text-bg-warning">
+                <code>d-none d-sm-block col-sm-6</code>
+                Ce div n'est pas visible pour les petits écrans.
+                <pre>
+XS (<576px) : caché (à cause de d-none).
+SM (≥576px) : affiché en block.
+MD (≥768px) : affiché en block et prend 6 colonnes
+               </pre>
+            </div>
+
+            <div class="col-sm-6 text-bg-danger">
+                <code>col-sm-6</code>
+                Ce div est visible pour tous les écrans.
+                <pre>
+Sur XS (<576px) : l’élément occupe toute la largeur (par défaut).
+Sur SM (≥576px) et plus : l’élément occupe 6 colonnes sur 12 (donc la moitié).
+                </pre>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

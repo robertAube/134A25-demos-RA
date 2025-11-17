@@ -9,22 +9,86 @@
 </head>
 <body>
 
-<div class="container-fluid bg-primary">
     <h1>Différentes marges</h1>
-    <div class="border rounded bg-warning">
-        Aucune marge
-    </div>
-    <div class="border rounded bg-info m-5">
-        .m-5: marge sur les 4 côtés
-    </div>
-    <div class="border rounded bg-secondary ms-4">
-        .m-s-4: marge au départ
-    </div>
-    <div class="border rounded bg-success mt-3">
-        Avec .w-100, ce div prendra 100% de la taille son parent.
+
+    <h2><code>border rounded</code></h2>
+    <div class="container-fluid bg-primary">
+        <div class="border rounded text-bg-warning">
+            Aucune marge
+        </div>
     </div>
 
-</div>
+    <h2><code>m-5 border rounded</code></h2>
+    <div class="container-fluid bg-primary border">
+        <div class="m-5 border rounded text-bg-warning">
+            <strong>m-5</strong>
+            <pre>
+m = marge sur les 4 côtés
+5 = taille de la marge (échelle Bootstrap : 0 à 5)
+</pre>
+        </div>
+    </div>
+
+
+    <h2><code>ms-5 border rounded</code></h2>
+    <div class="container-fluid bg-primary">
+        <div class="ms-5 border rounded text-bg-warning ">
+            <strong>ms-5</strong>
+            <pre>
+m = margin (marge)
+s = start (côté gauche)
+4 = taille de la marge (échelle Bootstrap : 0 à 5)
+</pre>
+        </div>
+    </div>
+
+    <h2><code>mt-4 border rounded</code></h2>
+    <div class="container-fluid bg-primary border">
+        <div class="mt-4 border rounded text-bg-warning">
+            <strong>mt-4</strong>
+            <pre>
+m = margin (marge)
+t = top (haut)
+4 = taille de la marge (échelle Bootstrap : 0 à 5)
+</pre>
+        </div>
+    </div>
+
+    <h2><code>mb-4 border rounded</code></h2>
+    <div class="container-fluid bg-primary border">
+        <div class="mb-4 border rounded text-bg-warning">
+            <strong>mb-4</strong>
+            <pre>
+m = margin (marge)
+t = bottom (bas)
+4 = taille de la marge (échelle Bootstrap : 0 à 5)
+</pre>
+        </div>
+    </div>
+
+    <h2><code>mx-5 border rounded</code></h2>
+    <div class="container-fluid bg-primary border">
+        <div class="mx-5 border rounded text-bg-warning">
+            <strong>mx-5</strong>
+            <pre>
+m = margin (marge)
+x = marge gauche et droite
+4 = taille de la marge (échelle Bootstrap : 0 à 5)
+</pre>
+        </div>
+    </div>
+
+    <h2><code>my-5 border rounded</code></h2>
+    <div class="container-fluid bg-primary border">
+        <div class="my-5 border rounded text-bg-warning">
+            <strong>my-5</strong>
+            <pre>
+m = margin (marge)
+y = marge haut et bas
+4 = taille de la marge (échelle Bootstrap : 0 à 5)
+</pre>
+        </div>
+    </div>
 
 </body>
 </html>
