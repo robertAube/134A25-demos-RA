@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Exemple de ::before et ::after</title>
-    <style> /* ne jamais mettre le style directement dans le html, mais plut?t dans les fichiers css */
+    <style> /* ne jamais mettre le style directement dans le html, mais plutôt dans les fichiers css */
         p::before {
             content: "Note: ";
             font-weight: bold;
@@ -16,9 +16,20 @@
             color: green;
         }
 
-        .divImageC2::after {
-            content: url("../_images/c2b_625x380.jpg");
-        }
+    /* une image dans le div */
+    .divImageC2 {
+        content: url("../_images/c2b_625x380.jpg");
+    }
+
+    /* une image avant le div */
+    .unDiv::before {
+        content: url("../_images/c2b_625x380.jpg");
+    }
+
+    /* du texte après le div */
+    .unDiv::after {
+        content: " et un chaton!";
+    }
     </style>
 </head>
 <body>
@@ -26,5 +37,6 @@
     <p>Ceci est un exemple de texte.</p>
     <p>Ceci est un autre exemple de texte.</p>
     <div class="divImageC2"></div>
+    <div class="unDiv">unDiv</div>
 </body>
 </html>
